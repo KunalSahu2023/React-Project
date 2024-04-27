@@ -1,1 +1,1 @@
-This Project - Harvest Tech is bases on agriculture and technology.
+This Project - Harvest Tech is based on agriculture and technology.

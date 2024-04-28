@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './dashboard.css';
 import Navbar from '../NavbarPage/Navbar';
 import Footer from '../FooterPage/Footer';
-import DashboardBlog from '../DashboardPage/DashboardBlog';
+import DashboardBlog from './DashboardBlog';
 import Profile from './Profile';
 import Weather from './Weather';
 

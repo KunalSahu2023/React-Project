@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
 
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import Home from './components/HomePage/Home';
-import About from './components/AboutPage/About';
-import Services from './components/ServicesPage/Services';
-import Contact from './components/ContactPage/Contact';
-import Dashboard from './components/DashboardPage/Dashboard';
-import Account from './components/AccountPage/Account';
+import Hero from './components/pages/Hero';
+import Service from './components/pages/Service';
+import Account from './components/pages/Account';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-     <Route path='/' element={<Home /> } />
+     <Route path='/' element={<Hero />} />
       <Route path='about' element={<About />} />
-      <Route path='service' element={<Services />} />
+      <Route path='service' element={<Service />} />
       <Route path='contact' element={<Contact />} />
-      <Route path='dashboard' element={<Dashboard />} />
       <Route path='account' element={<Account />} />
       </>
   )

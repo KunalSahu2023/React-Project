@@ -1,12 +1,13 @@
 
 import './App.css';
-import Navbar from './components/NavbarPage/Navbar';
+
+import Hero from './components/pages/Hero';
+
 
 function App() {
   return (
       <>
-      <h2>React Project</h2>
-      <Navbar />
+      <Hero />
       </>
     
   );

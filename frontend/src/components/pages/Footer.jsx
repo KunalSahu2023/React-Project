@@ -1,18 +1,15 @@
 import React from 'react'
-import './footer.css';
-import { Link } from 'react-router-dom';
-
-function Footer() {
-
+import '../styles/footer.css';
+const Footer = () => {
   return (
    <>
-  <div id="footer-container">
+   <div id="footer-container">
     <div class="footer-navbar">
         <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/service">Our Services</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/service">Our Services</a></li>
+            <li><a to="/contact">Contact Us</a></li>
         </ul>
     </div>
         <div class="footer-social-link">
@@ -30,4 +27,4 @@ function Footer() {
   )
 }
 
-export default Footer;
+export default Footer

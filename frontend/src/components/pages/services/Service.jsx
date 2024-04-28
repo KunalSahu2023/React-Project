@@ -1,7 +1,6 @@
 import React from 'react';
-import '../styles/services.css';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 const Service = () => {
   return (

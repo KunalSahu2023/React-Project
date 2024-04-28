@@ -6,13 +6,14 @@ const Account = () => {
     const[hide, setHide] = useState(false);
 
     const popupClose = () =>{
-        setHide(!hide);
+        setHide(false);
     }
   return (
    <>
     <div id="account-container">
     <div className="form-box">
         <span onClick={popupClose} className='cross'>❌</span>
+       
         <h1>
             <p className="signupbtn">Sign Up</p> 
             <p className="loginbtn disable">Log In</p>

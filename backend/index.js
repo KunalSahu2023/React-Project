@@ -1,4 +1,4 @@
-import 'dotenv/config';
+import "dotenv/config";
 import express from "express";
 import { PORT, mongoDBURL } from "./config.js";
 import mongoose from "mongoose";
@@ -17,13 +17,33 @@ app.use(
     })
 );
 
+//HomePage
 app.get("/", (req, res) => {
     res.send("Hello");
 });
 
-app.post("/submit", (req, res) => {
+//Create a new User
+app.post("/register", async (req, res) => {
+    try {
+        const newUser = {
+            email: req.body.email,
+            password: req.body.password,
+            name: req.body.name,
+        };
 
+        const user = await User.create(newUser);
+
+        return res.status(201).send(user);
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).send({ message: error.message });
+    }
 });
+
+//Login
+
+
+//Logout
 
 mongoose
     .connect(mongoDBURL)

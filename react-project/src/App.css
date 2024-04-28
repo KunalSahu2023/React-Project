@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h2{
+  font-size: 50px;
+}
+h3{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+p{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .section__padding {
+      padding: 4rem;
+    }
+    .section__margin {
+      margin: 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .section__padding {
+      padding: 4rem 2rem;
+    }
+    .section__margin {
+      margin: 4rem 2rem;
+    }
+  }

@@ -1,0 +1,219 @@
+
+/* about us styling start */
+#about-container{
+    height: 100%;
+}
+.about-box{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.about-box h2{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 65px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    color: white;
+}
+#about-container #img-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px;
+}
+#about-container #img-content img{
+    width: 35%;
+    height: 600px;
+    border-radius: 10px 5px 15px 10px;
+}
+.goal-content-box{
+    width: 55%;
+    height: 600px;
+    padding: auto;
+    line-height: 2;
+    box-shadow: 2px 2px 10px 1px black;
+    margin: 25px;
+}
+.goal-content-box .contents{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: auto;
+    gap: 5px;
+}
+.goal-content-box .contents .box{
+    padding: auto;
+    line-height: 2;
+}
+.goal-content-box .contents .box h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.goal-content-box .contents .box p{
+    font-size: 15px;
+    font-weight: 500;
+}
+/* about us styling end */
+
+/* Our team styling start */
+#our-team-container{
+    height: 100%;
+    margin: 20px;
+    padding: auto;
+}
+#our-team-container h2{
+    margin: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: overline;
+    letter-spacing: 2px;
+}
+#our-team-container .cards-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;    
+    margin: 15px;  
+}
+.cards-box .card{
+    width: 20%;
+    height: 325px;
+    margin: 10px;
+    padding: auto;
+    text-align: center;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 10px 2px black;
+    border-radius: 2px;
+}
+.cards-box .card img{
+    width: 160px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 2px;
+}
+.cards-box .card img:hover{
+    transform: scale(1.1);
+    transition: all 0.25s ease-in ;
+    cursor: pointer;
+}
+.cards-box .card h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: purple;
+    margin: 5px;
+}
+.cards-box .card p{
+    font-size: 17px;
+    font-weight: 600;
+    color:#555;
+    margin: 10px;
+}
+.team-social{
+    margin: 5px;
+    padding: 3px;
+}
+.team-social a{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding: 3px;
+    cursor: pointer;
+    border: .2px solid gray;
+    border-radius: 50%;
+    background-color: wheat;
+}
+.team-social .fa-instagram:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.team-social .fa-github:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Our team styling end */
+
+@media screen and  (max-width: 853px){  
+    
+/* about us styling start */
+#about-container{
+    height: 100%;
+}
+.about-box{
+    height: 500px;
+    position: relative;
+    margin-top: 50px;
+}
+#about-container #img-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#about-container #img-content img{
+    width: 100%;
+}
+.goal-content-box{
+    width: 90%;
+    height: 100%;
+    margin-top: 30px;
+}
+.goal-content-box .contents{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: auto;
+    gap: 5px;
+}
+.goal-content-box .contents .box{
+    padding: auto;
+    line-height: 1.4;
+}
+.goal-content-box .contents .box h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.goal-content-box .contents .box p{
+    font-size: 25px;
+    font-weight: 400;
+}
+/* about us styling end */
+
+/* Our team styling start */
+#our-team-container{
+    height: 100%;
+}
+#our-team-container .cards-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    margin: 15px;  
+}
+.cards-box .card{
+    width: 70%;
+    height: 670px;
+}
+.cards-box .card img{
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 2px;
+}
+
+.cards-box .card h4{
+    font-size: 50px;
+}
+.cards-box .card p{
+    font-size: 35px;
+}
+.team-social a{
+    font-size: 40px;
+    padding: 10px;
+}
+
+}

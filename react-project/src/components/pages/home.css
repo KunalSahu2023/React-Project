@@ -1,0 +1,8 @@
+
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: auto 200px;
+
+}

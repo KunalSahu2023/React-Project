@@ -1,8 +1,14 @@
 
-import React from 'react';
-import './navbar.css';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import './navbar.css';
+import Account from '../AccountPage/Account';
 function Navbar() {
+  const[showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () =>{
+    setShowPopup(!showPopup);
+  }
 
   return (
    <>
@@ -29,7 +35,8 @@ function Navbar() {
             </div>
         </nav>
         <div class="account">
-            <button class="btn">SignUp / LogIn</button>
+            <button onClick={togglePopup} class="btn">SignUp / LogIn</button>
+            {showPopup && (<Account />)}
         </div>
     </header>
    </>

@@ -1,7 +1,6 @@
 import React from 'react'
 import './account.css';
 import { Link } from 'react-router-dom';
-
 function Account() {
 
   return (
@@ -33,7 +32,7 @@ function Account() {
     <p><span class="text">Password suggestions</span> <a href="#">Click Here!</a></p>
 </div>  
 <div class="btn-field">
-<Link class="account-btn" to ="/dashboard">Sign Up</Link>
+<Link to ="/dashboard" class="account-btn">Sign Up</Link>
 </div>
      </form>
     </div>

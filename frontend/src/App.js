@@ -1,13 +1,15 @@
 
 import './App.css';
-import Home from './components/HomePage/Home';
+
+import Hero from './components/pages/Hero';
+
 
 function App() {
   return (
-    <div className="App">
-      <h2>React Project</h2>
-      <Home />
-    </div>
+      <>
+      <Hero />
+      </>
+    
   );
 }
 

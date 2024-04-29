@@ -1,12 +1,11 @@
 import React from 'react'
-import './home.css';
 
-const Home = () => {
+const Scheme = () => {
   return (
    <>
     <h1>Government Scheme & Subsidiaries</h1>
 
-   <div className='flex'>
+   <div className=''>
    <div>
    <h3>For Agriculture</h3>
    <h4>Pradhan Mantri Fasal Bima Yojana (PMFBY)</h4>
@@ -21,11 +20,11 @@ const Home = () => {
     <p>Objectives: To promote sustainable soil management and encourage balanced fertilizer use</p>
     <p>Features: Aims to provide farmers with soil health cards containing information on soil nutrient status and recommendations for appropriate fertilizers</p>
 
-    <h4>Pradhan Mantri Krishi Sinchayee Yojana (PMKSY</h4>
+    <h4>Pradhan Mantri Krishi Sinchayee Yojana (PMKSY)</h4>
     <p>Objectives: To improve water use efficiency and ensure better water resource management in agriculture</p>
     <p>Features: Focuses on irrigation and water conservation, promoting efficient water use and increasing cultivated areas under assured irrigation.</p>
 
-    <h4>National Agriculture Market (eNAM</h4>
+    <h4>National Agriculture Market (eNAM)</h4>
     <p>Objectives: To enable farmers to get fair prices and transparent transactions through a centralized marketplace.</p>
     <p>Features: An online trading platform for agricultural commodities, providing a unified national market for farmers and traders</p>
 
@@ -61,15 +60,8 @@ const Home = () => {
 
    </div>
    </div>
-
-
-
-
-
-
-
    </>
   )
 }
 
-export default Home;
+export default Scheme;

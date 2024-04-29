@@ -12,7 +12,7 @@ function Home() {
    <Navbar />
   <div id="home-container">
     <div class="content-box">
-        <h1>Welcome In Harvest Tech</h1>
+        <h1>Welcome To HarvestTech</h1>
         <p>Growing Smarter, Harvesting Better.</p>
        </div>
        <div class="image-box-">

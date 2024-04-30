@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Dashboard.css';
 import Footer from '../footer/Footer';
 import Nav from '../navbar/Nav';
+import { FaBell, FaClipboardCheck, FaSearch, FaUserCircle, FaCloud, FaUser, FaVenus, FaFacebookMessenger, FaOutdent, FaWheelchair } from 'react-icons/fa';
 
 
 const Deshboard = () => {
@@ -13,36 +14,43 @@ const Deshboard = () => {
         {
             path:"/dashboard/blog",
             name:"Dashboard",
+            icon: <FaClipboardCheck /> 
             
         },
         {
             path:"/dashboard/weather",
             name:"Weather",
+            icon: <FaCloud />
            
         },
         {
             path:"/dashboard/profile",
             name:"Profile",
+            icon: <FaUser />
             
         },
         {
             path:"/dashboard/event",
             name:"Event",
+            icon: <FaVenus />
          
         },
         {
             path:"/dashboard",
             name:"Notification",
+            icon: <FaBell />
          
         },
         {
             path:"/",
             name:"Logout",
+            icon: <FaOutdent />
          
         },
         {
             path:"/dashboard",
             name:"Setting",
+            icon: <FaWheelchair />
          
         }
     ]
@@ -57,21 +65,22 @@ const Deshboard = () => {
                     <form action="">
                         <input type="search" name="" id="" />
                         <a href="#"><FaSearch /></a>
-                        <a href="#"><i class="fa-solid fa-bell"></i></a>
-                        <a href="#" class=""><i class="fa-solid fa-circle-user"></i></a>
+                        <a href="#"><FaBell /></a>
+                        <a href="#" class=""><FaUserCircle /></a>
                     </form>
                 </div>
             </div>
             </div>
-
+<div className="">
 {
     menuItem.map((item, index)=>(
         <NavLink to={item.path} key={index}>
-                           <div>{item.icon}</div>
-                           <div>{item.name}</div>
+                           <div className='dashbaord-sidebar'>{item.icon}</div>
+                           <div className='dash-option'>{item.name}</div>
                        </NavLink>
                    ))
                 }
+</div>
     <Footer />
   </>
   )

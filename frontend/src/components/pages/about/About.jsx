@@ -2,8 +2,6 @@ import React from 'react';
 import './About.css';
 import Nav from '../navbar/Nav';
 import Footer from '../footer/Footer';
-import about from '../../../assets/about-2.jpeg.';
-
 const About = () => {
   return (
     <>

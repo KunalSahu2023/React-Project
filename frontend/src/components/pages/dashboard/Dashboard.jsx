@@ -56,7 +56,7 @@ const Deshboard = () => {
                 <div class="dashboard-navbar">
                     <form action="">
                         <input type="search" name="" id="" />
-                        <a href="#"><li class="fas fa-search"></li></a>
+                        <a href="#"><FaSearch /></a>
                         <a href="#"><i class="fa-solid fa-bell"></i></a>
                         <a href="#" class=""><i class="fa-solid fa-circle-user"></i></a>
                     </form>

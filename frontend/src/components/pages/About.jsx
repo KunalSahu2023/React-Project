@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/about.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import about from '../../assets/about-2.jpg';
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
        <h3>About Us</h3>
        </div>
        <div id="img-content">
-       <img src="/src/assets/about-2.jpg" alt="about-img" />
+       <img src={about} alt="about-img" />
        <div className="goal-content-box">
                <div className="contents">
                    <div className="box">

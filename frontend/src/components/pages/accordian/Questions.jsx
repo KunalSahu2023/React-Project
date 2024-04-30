@@ -1,20 +1,24 @@
 import React, {useState} from 'react';
-import { questions } from './Api';
+import { questions} from './Api';
 import Answers from './Answers';
+import './Accordians.css';
 
 const Questions = () => {
     const [data, setData] = useState(questions);
     return (
         <>
-            <section className="main-div">
-                <h1>Frequently Asked Questions </h1>
+            <div id="Questions">
+            <h2> Questions Related to Harvest Tech </h2>       
+            <div className="main-div">
         {
                 data.map((curElem) => {
-                    return <Answers key={curElem.id} {...curElem} />
-                    //here the spread operator is use to pass the the properties of the questions api
+                    return <Answers key={curElem.id} 
+                    {...curElem} />
+                    
                 })        
         }
-                 </section>
+                 </div>
+            </div>
         </>
     )
 }

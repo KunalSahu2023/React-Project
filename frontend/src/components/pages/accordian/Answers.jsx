@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './Accordians.css';
 
 const Answers = ({ question, answer }) => {
     const [show, setShow] = useState(false);
@@ -6,7 +7,7 @@ const Answers = ({ question, answer }) => {
         <>
            <div className="main-heading">
                 <h3>{question}</h3>
-                <p onClick={() => setShow(!show)}> { show? "🔽" : "🔼"} </p>
+                <p onClick={() => setShow(!show)}> { show? "➖" : "➕"} </p>
                    
             </div>
             { show &&  <p className="answers"> {answer} </p> }

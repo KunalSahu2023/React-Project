@@ -1,0 +1,140 @@
+/* weather section */
+#weather{
+    width: 79%; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    overflow: scroll;
+    margin: 5px;
+    padding: 5px;
+    z-index: 120;
+}
+#weather-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 1px 0px 3px 0.3px black;
+    color: white;
+    transition: 1s all ease;
+    margin-bottom: 5px;
+}
+.container-1{
+    width: 20%;
+    height: 300px;
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    outline: none;
+}
+.container-2{
+    width: 50%;
+    height: 350px;
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box-1{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+.box-1 .box-01{
+    width: 240px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+.box-1 .box-01 span{
+    margin: 9px;
+    padding: 2px;
+    text-align: center;
+}
+.container-3{
+    width: 20%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.container-3 .box{    
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container-3 .box .boxx{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container-3 .box .boxx span{
+    padding-top: 2px;
+    margin-top: 3px;
+}
+#weather-container-bottom{
+    width: 100%;
+}
+#weather-container-bottom h2{
+    margin-left: 15px;
+}
+#weather-container-bottom .date-box{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 1px 0px 3px 0.3px black;
+    margin-left: 20px;
+}
+#weather-container-bottom .date-box .date-box-1{
+    background: rgba(0,0,0,0.6);
+    width: 120px;
+    height: 50px;
+    padding: 1px;
+    text-align: center;
+}
+#weather-container-bottom .date-boxx{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    color: white;
+}
+#weather-container-bottom .date-boxx .boxs{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.6);
+    margin: 5px;
+    border-radius: 10px;
+}
+#weather-container-bottom .date-boxx .boxs .boxx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

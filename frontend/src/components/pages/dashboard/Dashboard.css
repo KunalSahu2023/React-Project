@@ -1,0 +1,218 @@
+
+/* header styling end */
+#dashboard-container .logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 60px;
+    margin: 2px 5px;
+    background-color: aquamarine;
+    border: 1px solid navy;
+}
+#dashboard-container .logo .dashboard-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#dashboard-container .logo .dashboard-navbar input{
+    padding: 8px;
+    width: 800px;
+    border-radius: 8px;
+}
+#dashboard-container .logo .dashboard-navbar a{
+    font-size: 25px;    
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    float: both;
+}
+#dashboard-container .logo .dashboard-navbar a:hover{
+    cursor: pointer;
+    color: blue;
+}
+#dashboard-container .logo h3{
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px black ;
+    color: white;
+}
+.dashboard-flex{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard-sidebar{
+    width: 18%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,235,0,0.5),rgba(133, 203, 133, 0.5));
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 25px 0px 10px 20px;
+    border: 1px solid black;
+    position: relative;
+    top: 17px;
+    box-shadow: 2px 4px 3px px black;
+}
+.dashboard-sidebar .dash-option{
+    font-size: 23px;
+}
+.dashboard .sidebar-box{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 15px;
+}
+.sidebar-top, .sidebar-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.sidebar-top .side-menu, .sidebar-bottom .side-menu{
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+.sidebar-top .side-menu, .sidebar-bottom .side-menu span{
+    cursor: pointer;
+}
+.sidebar-top .side-menu:hover, .sidebar-bottom .side-menu:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+.dashboard .content-area{  
+    width: 80%;
+    height: 100vh;
+    background-color: aqua;
+    position: relative;
+    z-index: -1;
+    display: none;
+}
+.dashboard .content-area.board-open{
+    display: block;
+}
+.dashboard .content-area .contents{
+    position: absolute;
+    top: 30%;
+    left: 20%; 
+    text-align: center;
+}
+#dashboard-container .content-area .contents h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: rgb(120, 23, 68);
+    letter-spacing: 10px;
+    line-height: 2.5;
+}
+#dashboard-container .content-area .contents h4 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+/* profile section styling start */
+
+.profile-menu{
+    width: 70px;
+    height: 120px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    background-color: white;
+    border: 2px solid gray;
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    border-radius: 10px;
+}
+.profile-menu.avatar-open{
+    display: flex;
+}
+.profile-menu .menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+}
+.profile-menu .menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 8px;
+    font-weight: 600;
+}
+ .profile-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: green;
+ }
+
+/* profile styling end */
+
+#profile-container{
+    display: none;
+    width: 32%;
+    height: 500px;
+    padding: 10px;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 21%;
+    right: 5%;
+    float: right;
+    box-shadow: 5px 4px 4px 2px black;
+    z-index: 5;
+}
+#profile-container.profile-open{
+    display: block;
+}
+#profile-container h3{
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+#profile-container .form{
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: .5s all;
+}
+.form label, input{
+    padding: 4px;
+    margin: 15px;
+}
+.form input{
+    width: 80%;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.form .btn{
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    background-color: green;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    margin: 5px 15px;
+    border-radius: 7px;
+}
+.form .btn:hover{
+    background-color: rebeccapurple;
+    color: black;
+}
+/* profile section end */
+
+
+
+
+
+

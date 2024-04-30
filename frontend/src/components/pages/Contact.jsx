@@ -1,12 +1,12 @@
-import React from 'react'
-import '../styles/contact.css';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import React from 'react';
+import './Contact.css';
+import Nav from './../navbar/Nav';
+import Footer from './../footer/Footer';
 
 const Contact = () => {
   return (
   <>
-  <Navbar />
+  <Nav />
   <div id="contact-container">
      <h3>Contact Us </h3>
      <div class="contact-box">
@@ -45,7 +45,6 @@ const Contact = () => {
     </div>
 
  </div>
- 
  <Footer />
   </>
   )

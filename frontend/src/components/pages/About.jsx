@@ -1,36 +1,38 @@
 import React from 'react';
-import '../styles/about.css';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import about from '../../assets/about-2.jpg';
+import './About.css';
+import Nav from './../navbar/Nav';
+import Footer from './../footer/Footer';
+import about from '../../../assets/about-2.jpg';
+import kunal from '../../../assets/kunal-img.JPG';
+import naman from '../../../assets/member-2.jpeg';
+import guide from '../../../assets/guide.jpeg';
 
 const About = () => {
   return (
     <>
-           <Navbar />
-        
+    <Nav />
         <div id="about-container">
        <div className="about-box">
-       <h3>About Us</h3>
+       <h2>About Us</h2>
        </div>
        <div id="img-content">
        <img src={about} alt="about-img" />
        <div className="goal-content-box">
                <div className="contents">
                    <div className="box">
-                       <h2>Our Misson</h2>
+                       <h3>Our Misson</h3>
                        <p>"Our mission is to empower individuals and communities through innovative technology solutions that address pressing societal challenges. 
                        <br /> We aim to build a more equitable and resilient future for all. Together, we envision a world where every individual has access to the tools and opportunities they need to thrive
                    </p>
                    </div>
                    <div className="box">
-                       <h2>Our Goal</h2>
+                       <h3>Our Goal</h3>
                        <p>"Our goal is to develop and deploy innovative agricultural technology solutions that increase crop yield, optimize resource utilization, and promote sustainable farming practices. <br />
                        Through collaborative partnerships with farmers, research institutions, and industry stakeholders, we aspire to drive positive change in the agricultural sector, contributing to food security, environmental conservation, and economic prosperity."
                    </p>
                    </div>
                    <div className="box">
-                       <h2>Our Purpose</h2>
+                       <h3>Our Purpose</h3>
                        <p>"Our purpose is to revolutionize the agricultural industry through innovative technology solutions that optimize resource efficiency, enhance productivity, and promote sustainability. <br />
                        We envision a future where agriculture is not only more productive but also more environmentally sustainable and socially equitable."
                    </p>
@@ -46,17 +48,19 @@ const About = () => {
        <div className="cards-box">
          
            <div className="card-ks card">
-               <img src="" alt="ks-img" />
+               <img src={kunal} alt="ks-img" />
                <h4>Kunal Sahu</h4>
                <p>Front End Developer</p>
                <div className="team-social">
                  <a href=""><i className="fa-brands fa-instagram"></i></a>
+                 
                   <a href=""><i className="fa-brands fa-github"></i></a>
+                  
                </div>
            </div>
           
            <div className="card-nj card">
-               <img src="" alt="nj-img" />
+               <img src={naman} alt="nj-img" />
                    <h4>Naman Jha</h4>
                    <p>Back End Developer</p>
                    <div className="team-social">
@@ -66,11 +70,12 @@ const About = () => {
                </div>
               
                <div className="card-guide card">
-                   <img src="" alt="guide-img" />
+                   <img src={guide} alt="guide-img" />
                    <h4>Er.Yashwant Dev</h4>
                    <p>Project Guide</p>
                    <div className="team-social">
                       <a href=""> <i className="fa-brands fa-instagram"></i></a>
+                     
                        <a href=""><i className="fa-brands fa-github"></i></a>
                    </div>
                    </div>

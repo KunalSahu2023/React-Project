@@ -2,6 +2,12 @@ import React from 'react';
 import './About.css';
 import Nav from '../navbar/Nav';
 import Footer from '../footer/Footer';
+import about from '../../../assets/about-2.jpg';
+import kunal from '../../../assets/member-1.jpeg';
+import naman from '../../../assets/member-2.jpeg';
+import guide from '../../../assets/guide.jpeg';
+import { Link } from 'react-router-dom';
+import { FaGithub, FaInstagram } from 'react-icons/fa';
 const About = () => {
   return (
     <>
@@ -47,10 +53,8 @@ const About = () => {
                <h4>Kunal Sahu</h4>
                <p>Front End Developer</p>
                <div className="team-social">
-                 <a href=""><i className="fa-brands fa-instagram"></i></a>
-                 
-                  <a href=""><i className="fa-brands fa-github"></i></a>
-                  
+               <Link to=""><FaInstagram /></Link>
+                <Link to=""><FaGithub /></Link>
                </div>
            </div>
           
@@ -59,8 +63,8 @@ const About = () => {
                    <h4>Naman Jha</h4>
                    <p>Back End Developer</p>
                    <div className="team-social">
-                       <a href=""><i className="fa-brands fa-instagram"></i></a>
-                       <a href=""><i className="fa-brands fa-github"></i></a>
+                   <Link to=""><FaInstagram /></Link>
+                    <Link to=""><FaGithub /></Link>
                    </div>
                </div>
               
@@ -69,9 +73,8 @@ const About = () => {
                    <h4>Er.Yashwant Dev</h4>
                    <p>Project Guide</p>
                    <div className="team-social">
-                      <a href=""> <i className="fa-brands fa-instagram"></i></a>
-                     
-                       <a href=""><i className="fa-brands fa-github"></i></a>
+                      <Link to=""><FaInstagram /></Link>
+                       <Link to=""><FaGithub /></Link>
                    </div>
                    </div>
             

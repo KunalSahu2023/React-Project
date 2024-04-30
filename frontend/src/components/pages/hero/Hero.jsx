@@ -3,6 +3,7 @@ import './Hero.css';
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 import Questions from '../accordian/Questions';
+import vid from '../../../assets/video-1.mp4';
 
 function Hero() {
 
@@ -13,12 +14,10 @@ function Hero() {
     <div class="content-box">
         <h1>Welcome To Harvest Tech</h1>
         <p>Growing Smarter, Harvesting Better.</p>
-        
        </div>
        <div class="image-box-">
-     <video
-     src=''
-     controls muted loop />
+     <video controls muted loop
+     src={vid}/>
        </div>
     </div>
     <Questions />

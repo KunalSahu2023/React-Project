@@ -3,7 +3,7 @@
     display: grid;
     margin: 2px;
     padding: 1px;
-    background: black;
+    background: green;
 }
 .footer-navbar ul{
     display: flex;
@@ -15,20 +15,32 @@
 }
 .footer-navbar ul li{
     list-style: none;
-}
+} 
 .footer-navbar ul li a{
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
-    color: green;
+    color: white;
+}
+.footer-social-link{
+    margin: auto;
 }
 .footer-social-link a{
     font-size: 23px;
     padding: 15px;
     color: white;
 }
-.fa-instagram:hover{
+.insta:hover{
     color:#f734b3;
+}
+.github:hover{
+    color:#000;
+}
+.fb:hover{
+    color: #0000ff;;
+}
+.yt:hover{
+    color:#ff0000;
 }
 .copyright{
     margin: 2px;
@@ -36,16 +48,12 @@
 }
 .copyright p{
     font-size: 18px;
-    color: green;
-}
-.copyright p a{
-    text-decoration: none;
     color: white;
 }
 #footer-container .name{
     font-size: 17px;
     margin: 5px;
     text-align: center;
-    color: green;
+    color: white;
 }
   

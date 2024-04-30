@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Account.css';
 import { Link } from 'react-router-dom';
+import { FaAt, FaKey, FaUser } from 'react-icons/fa';
 const Register = () => {
     const [hidePopup, setHidePopup] = useState(false);
 
@@ -20,7 +21,7 @@ const Register = () => {
                     <form action="/register" method='POST'>
                         <div className="input-group">
                             <div className="input-field nameField">
-                                <i className="fa-solid fa-user"></i>
+                                <FaUser />
                                 <input
                                     type="text"
                                     name='name'
@@ -28,7 +29,7 @@ const Register = () => {
                             </div>
 
                             <div className="input-field">
-                                <i className="fa-solid fa-at"></i>
+                                <FaAt />
                                 <label for="email"></label>
                                 <input 
                                 type="email" 
@@ -37,7 +38,7 @@ const Register = () => {
                             </div>
 
                             <div className="input-field">
-                                <i className="fa-solid fa-key"></i>
+                            <FaKey />
                                 <input type="password" 
                                 name='password'
                                 placeholder="Enter your password" required />

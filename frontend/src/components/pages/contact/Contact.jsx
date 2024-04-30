@@ -2,13 +2,14 @@ import React from 'react';
 import './Contact.css';
 import Nav from '../navbar/Nav';
 import Footer from '../footer/Footer';
+import { FaBuilding, FaEnvelope, FaEnvelopeOpen, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
   return (
   <>
   <Nav />
   <div id="contact-container">
-     <h3>Contact Us </h3>
+     <h2>Contact Us </h2>
      <div class="contact-box">
     <div class="address">
            <div class="address-box">
@@ -17,9 +18,9 @@ const Contact = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit, blanditiis.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, assumenda?
             </p>
-            <p><a href=""><i class="fa-regular fa-building"></i> Barwasagar - Jhansi (U.P.)</a></p>
-           <p><a href=""><i class="fa-solid fa-phone"></i> 8076215837 , 7654238900</a></p>
-           <p> <a href=""><i class="fa-solid fa-envelope"></i> harvesttech@gmail.com</a></p>
+            <p><a href=""><FaBuilding className='building' />Barwasagar - Jhansi (U.P.)</a></p>
+           <p><a href=""> <FaPhone className='phone'/> 8076215837 , 7654238900</a></p>
+           <p> <a href=""><FaEnvelopeOpen className='envelope' /> harvesttech@gmail.com</a></p>
            </div>
         </div>
         <div class="contact-form">

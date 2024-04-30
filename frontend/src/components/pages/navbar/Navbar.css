@@ -7,9 +7,9 @@
 }
 #header-container .logo{
     color: green;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 900;
-    text-shadow: 1px 2px 5px green;
+    text-shadow: 1px 2px 3px green;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;

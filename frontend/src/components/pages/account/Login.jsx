@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Account.css';
 import { Link } from 'react-router-dom';
+import { FaAt, FaKey } from 'react-icons/fa';
 const Login = () => {
     const [hidePopup, setHidePopup] = useState(false);
 
@@ -21,7 +22,7 @@ const Login = () => {
                         <div className="input-group">
 
                             <div className="input-field">
-                                <i className="fa-solid fa-at"></i>
+                                <FaAt />
                                 <label for="email"></label>
                                 <input 
                                 type="email" 
@@ -30,7 +31,7 @@ const Login = () => {
                             </div>
 
                             <div className="input-field">
-                                <i className="fa-solid fa-key"></i>
+                            <FaKey />
                                 <input type="password" 
                                 name='password'
                                 placeholder="Enter your password" required />

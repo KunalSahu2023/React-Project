@@ -51,14 +51,14 @@
     cursor: pointer;
     margin-top: 10px;
 }
-.address .fa-envelope:hover{
-    color: yellow;
+.envelope:hover{
+    color: #ffff00;
 }
-.address .fa-phone:hover{
-    color: blue;
+.phone:hover{
+    color: #0000ff;
 }
-.address .fa-building:hover{
-    color: orchid;
+.building:hover{
+    color: #da70d6;
 }
 /* contact-form styling start */
 .contact-form{

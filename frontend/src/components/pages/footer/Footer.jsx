@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from 'react-icons/fa';
 const Footer = () => {
   return (
    <>
@@ -13,12 +14,12 @@ const Footer = () => {
             <li><Link to="/contact">Contact Us</Link></li>
         </ul>
     </div>
-        {/* <div class="footer-social-link">
-           <Link to="#"><i class="fa-brands fa-instagram"></i></a>
-            <Link to="#"><i class="fa-brands fa-github"></i></a>
-            <Link to="#"><i class="fa-brands fa-facebook-f"></i></a>
-           <Link to="#"><i class="fa-brands fa-youtube"></i></a>
-        </div> */}
+        <div class="footer-social-link">
+           <Link to="#"><FaInstagram className='insta' /></Link>
+            <Link to="#"><FaGithub className='github' /></Link>
+            <Link to="#"><FaFacebook  className='fb'/></Link>
+           <Link to="#"><FaYoutube className='yt' /></Link>
+        </div>
         <div class="copyright">
             <p> © 2024 Harvest Tech </p>
         </div>

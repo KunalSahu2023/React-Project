@@ -1,28 +1,29 @@
-import React from 'react'
-import '../styles/navbar.css';
+import React from 'react';
+import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
+
   return (
     <>
      <header id="header-container">
-        <h2><a href="/" class="logo">Harvest Tech</a></h2>
+        <h2><Link to="/" class="logo">Harvest Tech</Link></h2>
 
         <nav class="header-navbar">
             <ul>
           <li>
-          <a href='/'>Home</a>
+         <Link to='/'>Home</Link>
           </li>
           <li>
-          <a href='/about'>About Us</a>
+          <Link to='/about'>About</Link>
           </li>
           <li>
-          <a href='/service'>Our Services</a>
+          <Link to='/service'>Our Service</Link>
           </li>
           <li>
-          <a href='/contact'>Contact Us</a>
+          <Link to='/contact'>Contact Us</Link>
           </li>
             </ul>
-           
         </nav>
     </header>
     </>

@@ -1,27 +1,28 @@
-import React from 'react'
-import '../styles/footer.css';
+import React from 'react';
+import './Footer.css';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
    <>
    <div id="footer-container">
     <div class="footer-navbar">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/service">Our Services</a></li>
-            <li><a to="/contact">Contact Us</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/service">Our Services</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
         </ul>
     </div>
-        <div class="footer-social-link">
-           <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-           <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>
+        {/* <div class="footer-social-link">
+           <Link to="#"><i class="fa-brands fa-instagram"></i></a>
+            <Link to="#"><i class="fa-brands fa-github"></i></a>
+            <Link to="#"><i class="fa-brands fa-facebook-f"></i></a>
+           <Link to="#"><i class="fa-brands fa-youtube"></i></a>
+        </div> */}
         <div class="copyright">
-            <p>&copy 2024 <a href="#">Harvest Tech.</a></p>
+            <p> © 2024 Harvest Tech </p>
         </div>
-        <p class="name">Design & implement by Kunal Sahu & Naman Jha .</p>
+        <p class="name">Design & implemented by Kunal Sahu & Naman Jha .</p>
 </div>
    </>
   )

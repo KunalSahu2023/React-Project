@@ -44,7 +44,7 @@ app.post("/register", async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 });
-//TODO: link react and express, send username, send isLoggedIn;
+//TODO: send username, send isLoggedIn;
 //Login
 app.post("/login", async (req, res) => {
     const { email, password } = req.body;

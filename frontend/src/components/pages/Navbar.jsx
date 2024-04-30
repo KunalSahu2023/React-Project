@@ -1,40 +1,54 @@
 import React, { useState } from 'react';
-import '../styles/navbar.css';
-import Account from './Account';
+import {Link} from 'react-router-dom';
+import './Navbar.css';
+import Register from './../account/Register';
+import Login from './../account/Login';
 
 const Navbar = () => {
-  const [showPopup, setShowPopup] = useState(false);
 
-  const togglePopup = ()=>{
-    setShowPopup(!showPopup);
+  const [registerPopup, setRegisterPopup] = useState(false);
+  const registerToggle = ()=>{
+    setRegisterPopup(!registerPopup);
+  }
+
+  const [loginPopup, setLoginPopup] = useState(false);
+  const loginToggle = ()=>{
+    setLoginPopup(!loginPopup);
   }
   return (
     <>
      <header id="header-container">
-        <h2><a href="/" class="logo">Harvest Tech</a></h2>
+        <h2><Link to="/" class="logo">Harvest Tech</Link></h2>
 
         <nav class="header-navbar">
             <ul>
           <li>
-          <a href='/'>Home</a>
+         <Link to='/'>Home</Link>
           </li>
           <li>
-          <a href='/about'>About Us</a>
+          <Link to='/about'>About</Link>
           </li>
           <li>
-          <a href='/service'>Our Services</a>
+          <Link to='/service'>Our Service</Link>
           </li>
           <li>
-          <a href='/contact'>Contact Us</a>
+          <Link to='/contact'>Contact Us</Link>
           </li>
             </ul>
             <div class="menu">
-                <span><i class="fa-solid fa-bars"></i></span>
+                <span> <i class="fa-solid fa-bars"></i></span>
             </div>
         </nav>
         <div class="account">
-            <button onClick={togglePopup} class="btn">SignUp / LogIn</button>
-            {showPopup && <Account />}
+           <button>
+           <Link to='/register' onClick={registerToggle} class="btn">Register</Link>
+           </button>
+            {registerPopup && <Register/>}
+
+            <button>
+           <Link to='/login' onClick={loginToggle} class="btn">Login</Link>
+           </button>
+            {loginPopup && <Login/>}
             
         </div>
     </header>

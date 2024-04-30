@@ -15,8 +15,7 @@ const Account = () => {
         <span onClick={popupClose} className='cross'>❌</span>
        
         <h1>
-            <p className="signupbtn">Sign Up</p> 
-            <p className="loginbtn disable">Log In</p>
+            <p className="signupbtn">Register</p> 
         </h1>
         <div className="underline"></div>
         <form action="">

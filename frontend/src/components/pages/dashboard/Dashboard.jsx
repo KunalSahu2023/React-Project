@@ -1,8 +1,8 @@
 import React ,{useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import Nav from './../navbar/Nav';
-import Footer from './../footer/Footer';
 import './Dashboard.css';
+import Footer from '../footer/Footer';
+import Nav from '../navbar/Nav';
 
 
 const Deshboard = () => {

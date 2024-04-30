@@ -1,8 +1,8 @@
 import React from 'react';
 import './Hero.css';
-import Navbar from './../navbar/Navbar';
-import Questions from './../accordian/Questions';
-import Footer from './../footer/Footer';
+import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
+import Questions from '../accordian/Questions';
 
 function Hero() {
 

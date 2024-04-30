@@ -1,8 +1,8 @@
 import React from 'react';
 import './Services.css';
 import { Link } from 'react-router-dom';
-import Nav from './../navbar/Nav';
-import Footer from './../footer/Footer';
+import Nav from '../navbar/Nav';
+import Footer from '../footer/Footer';
 
 const Service = () => {
   return (

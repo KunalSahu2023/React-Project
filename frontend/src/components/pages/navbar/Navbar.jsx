@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
-import Register from './../account/Register';
-import Login from './../account/Login';
+import Register from '../account/Register';
+import Login from '../account/Login';
 
 const Navbar = () => {
 

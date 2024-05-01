@@ -13,8 +13,8 @@
     left: 0px;
 }
 .form-box{
-    width: 50px;
-    height: 70%;
+    width: 25px;
+    height: 65%;
     background: linear-gradient(rgba(101, 233, 89, 0.793), rgba(178, 204, 178, 0.3));
     text-align: center;
     border-radius: 10px;
@@ -44,16 +44,23 @@
 .form-box h4 p:hover{
     text-decoration: overline;
 }
+.input-group{
+    width: 100%;
+    height: 100%;
+}
 .input-field{
+    width: 100%;
+    height: 50px;
     background: #eaeaea;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    max-height: 50px;
     transition: max-height 0.5s;
     overflow: hidden;
-    margin: 20px auto;
+    margin: 20px 20px;
 }
+.input-field .fa{
+    font-size: 22px;
+    margin-left: 18px;
+    }
 .input-field input{
     width: 100%;
     background: transparent;

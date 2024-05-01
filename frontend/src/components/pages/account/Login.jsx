@@ -39,7 +39,7 @@ const Login = () => {
                         <div className="input-group">
 
                             <div className="input-field">
-                                <FaAt />
+                                <FaAt  className='fa'/>
                                 <label for="email"></label>
                                 <input
                                     type="email"
@@ -49,11 +49,11 @@ const Login = () => {
                             </div>
 
                             <div className="input-field">
-                                <FaKey />
-                                <input type="password"
-                                    name='password'
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    placeholder="Enter your password" required />
+                            <FaKey className='fa' />
+                                <input type="password" 
+                                name='password'
+                                onChange={(e) => setPassword(e.target.value)}
+                                placeholder="Enter your password" required />
                             </div>
                             <p><span className="text">Don't have an account?</span> <Link to="/register">Register Here</Link></p>
                         </div>

@@ -29,10 +29,7 @@ const Login = () => {
             <FaArrowLeft /> Back
             </button></Link>
                 <div className="login-box">
-                    
-                    <h4>
-                        <p className="msg">Welcome Back</p>
-                    </h4>
+                     <p className="msg">Welcome Back</p>
                     <form 
                     onSubmit={handleSubmit}>
                         <div className="input-group">

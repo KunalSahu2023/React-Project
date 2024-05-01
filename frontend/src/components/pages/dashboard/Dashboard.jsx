@@ -1,85 +1,74 @@
 import React ,{useState} from 'react';
-import { NavLink } from 'react-router-dom';
 import './Dashboard.css';
+import './DashboardBlog.css'
+import './Weather.css'
 import Footer from '../footer/Footer';
 import Nav from '../navbar/Nav';
-import { FaBell, FaClipboardCheck, FaSearch, FaUserCircle, FaCloud, FaUser, FaVenus, FaFacebookMessenger, FaOutdent, FaWheelchair } from 'react-icons/fa';
+import DashboardBlog from './DashboardBlog';
+import Weather from './Weather';
+import { FaClipboardCheck, FaBell, FaCalendar, FaUser, FaCloud, FaCircle } from 'react-icons/fa';
 
+const Deshboard = ({children}) => {
+    const[openblog ,setOpenBlog] = useState(false);
+    const[openWeather ,setOpenWeather] = useState(false);
 
-const Deshboard = () => {
-    const[isOpen ,setIsOpen] = useState(false);
-    const toggle = () => setIsOpen (!isOpen);
-
-    const menuItem=[
-        {
-            path:"/dashboard/blog",
-            name:"Dashboard",
-            icon: <FaClipboardCheck /> 
-            
-        },
-        {
-            path:"/dashboard/weather",
-            name:"Weather",
-            icon: <FaCloud />
-           
-        },
-        {
-            path:"/dashboard/profile",
-            name:"Profile",
-            icon: <FaUser />
-            
-        },
-        {
-            path:"/dashboard/event",
-            name:"Event",
-            icon: <FaVenus />
-         
-        },
-        {
-            path:"/dashboard",
-            name:"Notification",
-            icon: <FaBell />
-         
-        },
-        {
-            path:"/",
-            name:"Logout",
-            icon: <FaOutdent />
-         
-        },
-        {
-            path:"/dashboard",
-            name:"Setting",
-            icon: <FaWheelchair />
-         
-        }
-    ]
-
+    function blogToggle() {
+        setOpenBlog (!openblog) 
+    }
+    function weatherToggle () {
+        setOpenWeather (!openWeather)
+    }
   return (
   <>
   <Nav />
-      <div id="dashboard-container">
-            <div class="logo">
-                <h3>Harvest Tech</h3>
-                <div class="dashboard-navbar">
-                    <form action="">
-                        <input type="search" name="" id="" />
-                        <a href="#"><FaSearch /></a>
-                        <a href="#"><FaBell /></a>
-                        <a href="#" class=""><FaUserCircle /></a>
-                    </form>
-                </div>
-            </div>
-            </div>
-<div className="">
-{
-    menuItem.map((item, index)=>(
-        <NavLink to={item.path} key={index}>
-                           <div className='dashbaord-sidebar'>{item.icon}</div>
-                           <div className='dash-option'>{item.name}</div>
-                       </NavLink>
-                   ))
-                }
+
+<div id="dashboard-container">
+<div className="dashboard-sidebar">
+    
+                <div
+                onClick={blogToggle}
+                className="dash-menu">
+                    <FaClipboardCheck  className='fa'/>
+                    <p>Dashboard</p>
+                    </div>
+                    <div
+                onClick={weatherToggle}
+                className="dash-menu">
+                    <FaCloud className='fa'/>
+                    <p>Weather</p>
+                    </div>
+                    <div 
+                
+                className="dash-menu">
+                    <FaUser  className='fa'/>
+                    <p>Profile</p>
+                    </div>
+                    <div 
+                
+                className="dash-menu">
+                    <FaCalendar  className='fa'/>
+                    <p>Event</p>
+                    </div>
+                    <div 
+                
+                className="dash-menu">
+                    <FaBell  className='fa'/>
+                    <p>Notification</p>
+                    </div>
+                    <div 
+                
+                className="dash-menu">
+                    <FaCircle className='fa'/>
+                    <p>Setting</p>
+                    </div>
+
+</div>
+<main>{children}</main>
+<div className="dashboard-flex">
+{openblog && <DashboardBlog />}
+{openWeather && <Weather />}
+    <Weather />
+</div>
 </div>
     <Footer />
   </>

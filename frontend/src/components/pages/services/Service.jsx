@@ -15,20 +15,20 @@ const Service = () => {
     <div className="card">
        <Link to= ''>
         <FaChalkboard className='fa'/>
-        <h3><Link to=''>E-Learning Platform</Link></h3>
+        <h3>E-Learning Platform</h3>
         </Link>
     </div>
     <div className="card">
        <Link to =''>
         <FaStore className='fa'/>
-        <h3><Link to=''>Marketplace Price</Link></h3>
+        <h3>Marketplace Price</h3>
         </Link>
     </div>
    <div className="card">
         <Link to ='/govt scheme'>
         <FaRupeeSign className='fa' />
-        <h3><Link to='/govt scheme'>Government Scheme & Subsidiaries
-        </Link></h3>
+        <h3>Government Scheme & Subsidiaries
+        </h3>
         </Link>
     </div>
 </div>
@@ -37,19 +37,19 @@ const Service = () => {
     <div className="card">
        <Link to =''>
        <FaGlobe className='fa' />
-        <h3><Link to =''>Localized Language Support</Link></h3>
+        <h3>Localized Language Support</h3>
        </Link>
     </div>
     <div className="card">
         <Link to ='' >
         <FaCloud className='fa' />
-        <h3><Link to=''>Real-Time Weather Forecas</Link>t</h3>
+        <h3>Real-Time Weather Forecast</h3>
         </Link>
     </div>
     <div className="card">
     <Link to ='' >
     <FaWallet className='fa'/>
-        <h3><Link to=''>Crop Information and Management</Link></h3>
+        <h3>Crop Information and Management</h3>
         </Link>
     </div>
 </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
+
 const Nav = () => {
 
   return (
@@ -26,9 +27,10 @@ const Nav = () => {
             </ul>
         </nav>
         <div class="account">
-    
-           <Link to='/register' class="btn">
-           <button> Register</button>
+           <Link to='/' class="btn">
+           <button> 
+            Logout
+            </button>
            </Link>
            
             </div>

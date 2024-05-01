@@ -52,6 +52,7 @@
     background: green;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
 .account button:hover{
     background: blueviolet;

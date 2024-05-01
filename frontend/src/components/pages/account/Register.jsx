@@ -30,9 +30,7 @@ const Register = () => {
             <FaArrowLeft /> Back
             </button></Link>
                 <div className="reg-box">
-                    <h4>
                         <p className="msg">Welcome to Harvest Tech</p>
-                    </h4>
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
                             <div className="input-field nameField">

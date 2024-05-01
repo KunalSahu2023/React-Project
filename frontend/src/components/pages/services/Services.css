@@ -5,6 +5,12 @@
     padding: auto;
     width: 100%;
 }
+#service-container h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    text-shadow: 4px 3px 5px black;
+}
 
 /* our service start */
 .service-box {

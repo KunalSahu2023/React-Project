@@ -14,7 +14,7 @@ const About = () => {
     <Nav />
         <div id="about-container">
        <div className="about-box">
-       <h2>About Us</h2>
+       <h2>ABOUT US</h2>
        </div>
        <div id="img-content">
        <img src={about} alt="about-img" />
@@ -53,8 +53,8 @@ const About = () => {
                <h4>Kunal Sahu</h4>
                <p>Front End Developer</p>
                <div className="team-social">
-               <Link to=""><FaInstagram /></Link>
-                <Link to=""><FaGithub /></Link>
+               <Link to=""><FaInstagram className='fa insta' /></Link>
+                <Link to=""><FaGithub className='fa github' /></Link>
                </div>
            </div>
           
@@ -63,8 +63,8 @@ const About = () => {
                    <h4>Naman Jha</h4>
                    <p>Back End Developer</p>
                    <div className="team-social">
-                   <Link to=""><FaInstagram /></Link>
-                    <Link to=""><FaGithub /></Link>
+                   <Link to=""><FaInstagram className='fa insta' /></Link>
+                <Link to=""><FaGithub className='fa github' /></Link>
                    </div>
                </div>
               
@@ -73,8 +73,8 @@ const About = () => {
                    <h4>Er.Yashwant Dev</h4>
                    <p>Project Guide</p>
                    <div className="team-social">
-                      <Link to=""><FaInstagram /></Link>
-                       <Link to=""><FaGithub /></Link>
+                   <Link to=""><FaInstagram className='fa insta' /></Link>
+                <Link to=""><FaGithub className='fa github' /></Link>
                    </div>
                    </div>
             

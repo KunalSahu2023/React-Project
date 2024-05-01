@@ -26,55 +26,49 @@ app.get("/", (req, res) => {
 
 //Create a new User
 app.post("/register", async (req, res) => {
-    // try {
-    //     const newUser = {
-    //         email: req.body.email,
-    //         password: md5(req.body.password),
-    //         name: req.body.name,
-    //     };
+    try {
+        const newUser = {
+            email: req.body.email,
+            password: md5(req.body.password),
+            name: req.body.name,
+        };
 
-    //     const user = await User.create(newUser);
+        const user = await User.create(newUser);
 
-    //     isLoggedIn = true;
+        isLoggedIn = true;
 
-    //     //TODO: add redirect route
-    //     return res.status(201).json({ message: "User registered successfully", user });
-    // } catch (error) {
-    //     console.log(error.message);
-    //     res.status(500).send({ message: error.message });
-    // }
-    User.create(req.body)
-        .then(User => res.json(User))
-        .catch(err => res.json(err))
+        return res.status(201).json({ message: "User registered successfully", user });
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).send({ message: error.message });
+    }
 });
 //TODO: send username, send isLoggedIn;
 //Login
 app.post("/login", async (req, res) => {
-    const { email, password } = req.body;
+    const { email, password } = await req.body;
 
-    
-    
-    // try {
-    //     const foundUser = await User.findOne({ email });
+    try {
+        const foundUser = await User.findOne({ email });
 
-    //     if (!foundUser) {
-    //         return res.status(404).json('User not found');
-    //     }
+        if (!foundUser) {
+            return res.status(404).json('User not found');
+        }
 
-    //     // Compare passwords
-    //     if (foundUser.password !== md5(password)) {
-    //         return res.status(401).json('Incorrect password');
-    //     }
+        // Compare passwords
+        if (foundUser.password !== md5(password)) {
+            return res.status(401).json('Incorrect password');
+        }
 
-    //     // isLoggedIn = true;
-    //     // console.log(isLoggedIn);
+        // isLoggedIn = true;
+        // console.log(isLoggedIn);
 
-    //     res.status(200).json("Login successful");
+        res.status(200).json("Login successful");
 
-    // } catch (error) {
-    //     console.log(error.message);
-    //     res.status(500).send("Internal server error");
-    // }
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).send("Internal server error");
+    }
 });
 
 //Logout

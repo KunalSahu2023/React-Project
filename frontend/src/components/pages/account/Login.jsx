@@ -20,10 +20,10 @@ const Login = () => {
         axios.post("/login", { email, password })
             .then(result => {
                 console.log(result.data)
-                // if (result.data === "Login successful")
+                if (result.data === "Login successful")
                     navigate("/dashboard")
             })
-            .catch(err => console.log(err))
+            .catch(err => alert(err.response.data))
     };
 
     return (
@@ -40,7 +40,6 @@ const Login = () => {
 
                             <div className="input-field">
                                 <FaAt  className='fa'/>
-                                <label for="email"></label>
                                 <input
                                     type="email"
                                     name='email'

@@ -14,7 +14,7 @@ const About = () => {
     <Nav />
         <div id="about-container">
        <div className="about-box">
-       <h2>ABOUT US</h2>
+       <h2>About Us</h2>
        </div>
        <div id="img-content">
        <img src={about} alt="about-img" />

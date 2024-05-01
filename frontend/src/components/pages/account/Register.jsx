@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Account.css';
 import { Link } from 'react-router-dom';
-import { FaAt, FaKey, FaUser } from 'react-icons/fa';
+import { FaArrowLeft, FaAt, FaKey, FaUser } from 'react-icons/fa';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 const Register = () => {
@@ -25,6 +25,10 @@ const Register = () => {
     return (
         <>
             <div id="account-container">
+        <Link to='/'>
+        <button className='back'>
+            <FaArrowLeft /> Back
+            </button></Link>
                 <div className="reg-box">
                     <h4>
                         <p className="msg">Welcome to Harvest Tech</p>

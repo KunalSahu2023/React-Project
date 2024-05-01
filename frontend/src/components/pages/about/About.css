@@ -3,9 +3,11 @@
 
 #about-container h2{
     font-size: 30px;
+    text-align: center;
     font-weight: 700;
     letter-spacing: 15px;
     text-shadow: 4px 3px 5px black;
+    text-transform: uppercase;
 }
 #about-container #img-content{
     display: flex;
@@ -53,10 +55,12 @@
     margin: 40px auto; 
 }
 #our-team-container h2{
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
     font-weight: 700;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     text-shadow: 4px 3px 5px black;
+    text-transform: uppercase;
 }
 #our-team-container .cards-box{
     display: flex;
@@ -112,6 +116,7 @@
     cursor: pointer;
     border: .2px solid gray;
     border-radius: 40%;
+    border: none;
 }
 .team-social .insta:hover{
     color: #fa1496;

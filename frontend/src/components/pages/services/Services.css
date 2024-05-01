@@ -7,9 +7,11 @@
 }
 #service-container h2{
     font-size: 30px;
+    text-align: center;
     font-weight: 700;
     letter-spacing: 15px;
     text-shadow: 4px 3px 5px black;
+    text-transform: uppercase;
 }
 
 /* our service start */
@@ -35,14 +37,17 @@
     font-size: 60px;
     color: green;
 }
+.service-box .card h3{
+    margin-top: 3px;
+}
 .service-box .card h3 a{
     text-decoration: none;
-    margin-top: 6px;
-    text-align: center;
     font-size: 21px;
-    font-weight: bolder;
+    text-align: center;
     color: black;
-}
+    outline: none;
+    font-weight: bolder;
+} 
 .service-box .card:hover{
     box-shadow: 0px 2px 15px 3px black;
 }

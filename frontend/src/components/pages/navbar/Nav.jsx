@@ -25,6 +25,13 @@ const Nav = () => {
           </li>
             </ul>
         </nav>
+        <div class="account">
+    
+           <Link to='/register' class="btn">
+           <button> Register</button>
+           </Link>
+           
+            </div>
     </header>
     </>
   )

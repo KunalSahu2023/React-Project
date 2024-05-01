@@ -1,11 +1,23 @@
 #account-container{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    position: relative;
+}
+.back {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
 }
 
 .reg-box{
@@ -40,6 +52,9 @@ h4 p{
 .input-field{
     width: 85%;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #eaeaea;
     border-radius: 10px;
     transition: max-height 0.5s;
@@ -68,18 +83,17 @@ p a{
     font-weight: 700;
 }
 .btn-field .account-btn {
-flex-basis: 70%;
-font-size: 18px;
-height: 40px;
-background: blueviolet;
-border-radius: 10px;
-padding: 5px;
-border: 0;
-outline: 0;
-margin: auto;
+    width: 120px;
+    height: 40px;
+    background: blueviolet;
+    border-radius: 10px;
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    margin: auto;
 }
 .account-btn a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }

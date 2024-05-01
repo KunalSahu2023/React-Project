@@ -22,7 +22,7 @@ const Login = () => {
                         <div className="input-group">
 
                             <div className="input-field">
-                                <FaAt />
+                                <FaAt  className='fa'/>
                                 <label for="email"></label>
                                 <input 
                                 type="email" 
@@ -31,7 +31,7 @@ const Login = () => {
                             </div>
 
                             <div className="input-field">
-                            <FaKey />
+                            <FaKey className='fa'/>
                                 <input type="password" 
                                 name='password'
                                 placeholder="Enter your password" required />

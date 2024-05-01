@@ -21,7 +21,7 @@ const Register = () => {
                     <form action="/register" method='POST'>
                         <div className="input-group">
                             <div className="input-field nameField">
-                                <FaUser />
+                                <FaUser className='fa'/>
                                 <input
                                     type="text"
                                     name='name'
@@ -29,7 +29,7 @@ const Register = () => {
                             </div>
 
                             <div className="input-field">
-                                <FaAt />
+                                <FaAt className='fa' />
                                 <label for="email"></label>
                                 <input 
                                 type="email" 
@@ -38,7 +38,7 @@ const Register = () => {
                             </div>
 
                             <div className="input-field">
-                            <FaKey />
+                            <FaKey className='fa'/>
                                 <input type="password" 
                                 name='password'
                                 placeholder="Enter your password" required />

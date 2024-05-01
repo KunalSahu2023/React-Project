@@ -31,7 +31,7 @@ const Register = () => {
         <>
             <div id="account-container">
                 <div className="form-box">
-                    <span onClick={toggleHide} className='cross'>❌</span>
+                    <span onClick={toggleHide} className='cross'></span>
                     {hidePopup && !setHidePopup}
                     <h4>
                         <p className="signupbtn">Welcome to Harvest Tech</p>

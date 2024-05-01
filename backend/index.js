@@ -7,7 +7,6 @@ import md5 from "md5";
 import { User } from "./models/UserModel.js";
 
 const app = express();
-let isLoggedIn = false;
 
 app.use(express.json());
 
@@ -19,71 +18,52 @@ app.use(
     })
 );
 
-//HomePage
-app.get("/", (req, res) => {
-    res.send("Hello");
-});
-
 //Create a new User
 app.post("/register", async (req, res) => {
-    // try {
-    //     const newUser = {
-    //         email: req.body.email,
-    //         password: md5(req.body.password),
-    //         name: req.body.name,
-    //     };
+    try {
+        const newUser = {
+            email: req.body.email,
+            password: md5(req.body.password),
+            name: req.body.name,
+        };
 
-    //     const user = await User.create(newUser);
+        await User.create(newUser);
 
-    //     isLoggedIn = true;
-
-    //     //TODO: add redirect route
-    //     return res.status(201).json({ message: "User registered successfully", user });
-    // } catch (error) {
-    //     console.log(error.message);
-    //     res.status(500).send({ message: error.message });
-    // }
-    User.create(req.body)
-        .then(User => res.json(User))
-        .catch(err => res.json(err))
+        return res.status(201).json("User registered successfully", newUser.name);
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).json("Unable to register.");
+    }
 });
-//TODO: send username, send isLoggedIn;
+
 //Login
 app.post("/login", async (req, res) => {
-    const { email, password } = req.body;
+    const { email, password } = await req.body;
 
-    
-    
-    // try {
-    //     const foundUser = await User.findOne({ email });
+    try {
+        const foundUser = await User.findOne({ email });
 
-    //     if (!foundUser) {
-    //         return res.status(404).json('User not found');
-    //     }
+        if (!foundUser) {
+            return res.status(404).json('User not found');
+        }
 
-    //     // Compare passwords
-    //     if (foundUser.password !== md5(password)) {
-    //         return res.status(401).json('Incorrect password');
-    //     }
+        // Compare passwords
+        if (foundUser.password !== md5(password)) {
+            return res.status(401).json('Incorrect password');
+        }
 
-    //     // isLoggedIn = true;
-    //     // console.log(isLoggedIn);
+        res.status(200).json("Login successful", foundUser.name);
 
-    //     res.status(200).json("Login successful");
-
-    // } catch (error) {
-    //     console.log(error.message);
-    //     res.status(500).send("Internal server error");
-    // }
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).json("Internal server error");
+    }
 });
 
 //Logout
 app.post("/logout", async (req, res) => {
     try {
-        isLoggedIn = false;
-        console.log(isLoggedIn);
-
-        return res.status(200).send({ message: "Logout successful" });
+        return res.status(200).json("Logout successful");
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ message: error.message });

@@ -5,12 +5,7 @@ import { FaAt, FaKey, FaUser } from 'react-icons/fa';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 const Register = () => {
-    const [hidePopup, setHidePopup] = useState(false);
-
-    const toggleHide = () => {
-        setHidePopup(!hidePopup);
-    }
-
+ 
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -30,11 +25,9 @@ const Register = () => {
     return (
         <>
             <div id="account-container">
-                <div className="form-box">
-                    
-                   
+                <div className="reg-box">
                     <h4>
-                        <p className="signupbtn">Welcome to Harvest Tech</p>
+                        <p className="msg">Welcome to Harvest Tech</p>
                     </h4>
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
@@ -64,10 +57,12 @@ const Register = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                                 placeholder="Enter your password" required />
                             </div>
-                            <p><span className="text">Already have an account?</span> <Link to="/login"> Login</Link></p>
+                            <p><span className="text">Already have an account?</span> <Link to="/login"> Login Here</Link></p>
                         </div>
                         <div className="btn-field">
-                            <button type='submit' className="account-btn">Register</button>
+                            <button type='submit' className="account-btn">
+                            <Link to ='/dashboard'>Register</Link>
+                                </button>
                         </div>
                     </form>
                 </div>

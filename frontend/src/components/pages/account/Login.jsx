@@ -5,11 +5,6 @@ import { FaAt, FaKey } from 'react-icons/fa';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 const Login = () => {
-    const [hidePopup, setHidePopup] = useState(false);
-
-    const toggleHide = () => {
-        setHidePopup(!hidePopup);
-    }
 
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -29,12 +24,13 @@ const Login = () => {
     return (
         <>
             <div id="account-container">
-                <div className="form-box">
+                <div className="login-box">
                     
                     <h4>
-                        <p className="signupbtn">Welcome Back</p>
+                        <p className="msg">Welcome Back</p>
                     </h4>
-                    <form onSubmit={handleSubmit}>
+                    <form 
+                    onSubmit={handleSubmit}>
                         <div className="input-group">
 
                             <div className="input-field">
@@ -56,7 +52,9 @@ const Login = () => {
                             <p><span className="text">Don't have an account?</span> <Link to="/register">Register Here</Link></p>
                         </div>
                         <div className="btn-field">
-                            <button type='submit' className="account-btn">Login</button>
+                            <button type='submit' className="account-btn">
+                              <Link to ='/dashboard'>Login</Link>
+                                </button>
                         </div>
                     </form>
                 </div>

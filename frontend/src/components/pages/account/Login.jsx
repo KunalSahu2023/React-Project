@@ -2,12 +2,29 @@ import React, { useState } from 'react';
 import './Account.css';
 import { Link } from 'react-router-dom';
 import { FaAt, FaKey } from 'react-icons/fa';
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
     const [hidePopup, setHidePopup] = useState(false);
 
     const toggleHide = () => {
         setHidePopup(!hidePopup);
     }
+
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post("/login", { email, password })
+            .then(result => {
+                console.log(result.data)
+                // if (result.data === "Login successful")
+                    navigate("/dashboard")
+            })
+            .catch(err => console.log(err))
+    };
 
     return (
         <>
@@ -18,28 +35,30 @@ const Login = () => {
                     <h4>
                         <p className="signupbtn">Welcome Back</p>
                     </h4>
-                    <form action="/login" method='POST'>
+                    <form onSubmit={handleSubmit}>
                         <div className="input-group">
 
                             <div className="input-field">
                                 <FaAt />
                                 <label for="email"></label>
-                                <input 
-                                type="email" 
-                                name='email'
-                                placeholder="Enter your Email" required />
+                                <input
+                                    type="email"
+                                    name='email'
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    placeholder="Enter your Email" required />
                             </div>
 
                             <div className="input-field">
-                            <FaKey />
-                                <input type="password" 
-                                name='password'
-                                placeholder="Enter your password" required />
+                                <FaKey />
+                                <input type="password"
+                                    name='password'
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    placeholder="Enter your password" required />
                             </div>
-                            <p><span className="text">Don't have an account?</span> <Link to="/register"> Register Here</Link></p>
+                            <p><span className="text">Don't have an account?</span> <Link to="/register">Register Here</Link></p>
                         </div>
                         <div className="btn-field">
-                            <button className="account-btn"><Link to="/dashboard">Login</Link></button>
+                            <button type='submit' className="account-btn">Login</button>
                         </div>
                     </form>
                 </div>

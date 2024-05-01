@@ -30,8 +30,7 @@ const Login = () => {
         <>
             <div id="account-container">
                 <div className="form-box">
-                    <span onClick={toggleHide} className='cross'>❌</span>
-                    {hidePopup && !setHidePopup}
+                    
                     <h4>
                         <p className="signupbtn">Welcome Back</p>
                     </h4>

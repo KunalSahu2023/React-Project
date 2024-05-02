@@ -49,7 +49,6 @@ app.post("/login", async (req, res) => {
 
         // Compare passwords
         if (foundUser.password !== md5(password)) {
-            console.log(foundUser.password)
             return res.status(401).json({ message: 'Incorrect password.' });
         }
 

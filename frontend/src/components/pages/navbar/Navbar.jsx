@@ -35,19 +35,17 @@ const Navbar = () => {
           <Link to='/contact'>Contact Us</Link>
           </li>
             </ul>
-            <div class="menu">
-                <span> <i class="fa-solid fa-bars"></i></span>
-            </div>
         </nav>
         <div class="account">
-           <button>
-           <Link to='/register' onClick={registerToggle} class="btn">Register</Link>
-           </button>
+    
+           <Link to='/register' onClick={registerToggle} class="btn">
+           <button> Register</button>
+           </Link>
             {registerPopup && <Register/>}
-
-            <button>
-           <Link to='/login' onClick={loginToggle} class="btn">Login</Link>
-           </button>
+            
+           <Link to='/login' onClick={loginToggle} class="btn">
+           <button>Login</button>
+           </Link>
             {loginPopup && <Login/>}
             
         </div>

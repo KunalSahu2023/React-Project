@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Account.css';
 import { Link } from 'react-router-dom';
-import { FaAt, FaKey, FaUser } from 'react-icons/fa';
+import { FaArrowLeft, FaAt, FaKey, FaUser } from 'react-icons/fa';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 const Register = () => {
@@ -28,10 +28,12 @@ const Register = () => {
     return (
         <>
             <div id="account-container">
+        <Link to='/'>
+        <button className='back'>
+            <FaArrowLeft /> Back
+            </button></Link>
                 <div className="reg-box">
-                    <h4>
                         <p className="msg">Welcome to Harvest Tech</p>
-                    </h4>
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
                             <div className="input-field nameField">
@@ -67,8 +69,13 @@ const Register = () => {
                         </div>
                         <div className="btn-field">
                             <button type='submit' className="account-btn">
+<<<<<<< HEAD
                                 Register
                             </button>
+=======
+                            Register
+                                </button>
+>>>>>>> 73536dce0855838df59a3f3435989411b1f3036b
                         </div>
                     </form>
                 </div>

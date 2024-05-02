@@ -1,162 +1,39 @@
 
 /* header styling end */
-#dashboard-container .logo{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    height: 60px;
-    margin: 2px 5px;
-    background-color: aquamarine;
-    border: 1px solid navy;
-}
-#dashboard-container .logo .dashboard-navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 80%;
-}
-#dashboard-container .logo .dashboard-navbar input{
-    padding: 8px;
-    width: 800px;
-    border-radius: 8px;
-}
-#dashboard-container .logo .dashboard-navbar a{
-    font-size: 25px;    
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-    padding: 5px;
-    float: both;
-}
-#dashboard-container .logo .dashboard-navbar a:hover{
-    cursor: pointer;
-    color: blue;
-}
-#dashboard-container .logo h3{
-    font-size: 25px;
-    font-weight: 700;
-    text-shadow: 1px 1px 5px black ;
-    color: white;
-}
-.dashboard-flex{
+#dashboard-container{
     width: 100%;
     height: 100vh;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
+    margin: 2px 5px;
 }
 .dashboard-sidebar{
-    width: 18%;
-    height: 100vh;
-    background: linear-gradient(rgba(0,235,0,0.5),rgba(133, 203, 133, 0.5));
+    width: 20%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 25px 0px 10px 20px;
-    border: 1px solid black;
-    position: relative;
-    top: 17px;
-    box-shadow: 2px 4px 3px px black;
+    background-color: blueviolet;
 }
-.dashboard-sidebar .dash-option{
-    font-size: 23px;
-}
-.dashboard .sidebar-box{
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-    margin-top: 15px;
-}
-.sidebar-top, .sidebar-bottom{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-.sidebar-top .side-menu, .sidebar-bottom .side-menu{
-    font-size: 20px;
-    border-bottom: 2px solid white;
-    padding: 10px;
-}
-.sidebar-top .side-menu, .sidebar-bottom .side-menu span{
-    cursor: pointer;
-}
-.sidebar-top .side-menu:hover, .sidebar-bottom .side-menu:hover{
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-}
-.dashboard .content-area{  
-    width: 80%;
-    height: 100vh;
-    background-color: aqua;
-    position: relative;
-    z-index: -1;
-    display: none;
-}
-.dashboard .content-area.board-open{
-    display: block;
-}
-.dashboard .content-area .contents{
-    position: absolute;
-    top: 30%;
-    left: 20%; 
-    text-align: center;
-}
-#dashboard-container .content-area .contents h2{
-    font-size: 45px;
-    font-weight: 600;
-    color: rgb(120, 23, 68);
-    letter-spacing: 10px;
-    line-height: 2.5;
-}
-#dashboard-container .content-area .contents h4 {
-    font-size: 25px;
-    letter-spacing: 5px;
-    font-weight: 500;
-}
-/* profile section styling start */
-
-.profile-menu{
-    width: 70px;
-    height: 120px;
+.dash-menu{
+    margin: 15px 20px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 3px;
-    background-color: white;
-    border: 2px solid gray;
-    position: absolute;
-    top: 12%;
-    right: 5%;
-    border-radius: 10px;
-    background: gold;
+    gap: 10px;
+    font-size: 23px;
+    cursor: pointer;
 }
-.profile-menu.avatar-open{
-    display: flex;
+.dash-menu .fa:hover{
+    color: blue;
 }
-.profile-menu .menu{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    margin-top: 5px;
+.dashboard-flex{
+    width: 80%;
+    height: 100vh;
+    margin: 20px 0;
+    position: relative;
+    border: 1px solid black;
 }
-.profile-menu .menu a{
-    text-decoration: none;
-    color: black;
-    font-size: 8px;
-    font-weight: 600;
-}
- .profile-menu hr{
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background-color: green;
- }
-
-/* profile styling end */
-
-
 
 
 

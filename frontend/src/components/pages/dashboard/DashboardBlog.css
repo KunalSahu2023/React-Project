@@ -1,13 +1,11 @@
 .content-area{
-    width: 79%; 
-    height: 100vh;
+    width: 95%; 
+    height: 100%;
     padding: 10px;
-    background-color: white;
-    position: absolute;
-    top: 0px;
-    left: 10%;
     box-shadow: 2px 0px 2px black;
-    z-index: 150;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .content-area h3{
     text-align: center;
@@ -26,7 +24,7 @@
     width: 320px;
     height: 220px;
     box-shadow: 2px 1px 4px 0px black;
-    margin-top: 20px;
+    margin-top: 6px 2px;
 }
 .flex-3 h4{
     font-size: 18px;

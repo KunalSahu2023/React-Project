@@ -7,9 +7,11 @@
 }
 #service-container h2{
     font-size: 30px;
+    text-align: center;
     font-weight: 700;
     letter-spacing: 15px;
     text-shadow: 4px 3px 5px black;
+    text-transform: uppercase;
 }
 
 /* our service start */
@@ -28,23 +30,68 @@
     margin: 10px;
     border: 1px solid none;
     box-shadow: 1px 2px 10px 2px black;
+    cursor: pointer;
 }
 .service-box .card .fa{
-    margin: 25px 25px;
+    margin-top: 30px;
     padding: 5px;
-    font-size: 60px;
+    font-size: 50px;
     color: green;
 }
-.service-box .card h3 a{
+.service-box .card a {
     text-decoration: none;
-    margin-top: 6px;
+    font-size: 16px;
     text-align: center;
-    font-size: 21px;
-    font-weight: bolder;
     color: black;
-}
+    outline: none;
+    font-weight: bolder;
+} 
 .service-box .card:hover{
     box-shadow: 0px 2px 15px 3px black;
 }
 /* our service end */
 /* service styling end */
+
+.scheme-heading{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-shadow: 1px 1px 0px black;
+    text-transform: uppercase;
+}
+.scheme-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+.govt-flex{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 0px 20px;
+    box-shadow: 1px 2px 5px;
+    border: none;
+    border-radius: 6px;
+}
+.govt-flex h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.scheme-flex{
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+.scheme-flex h4{
+    font-size: 16px;
+}
+.scheme-flex p{
+    font-size: 14px;
+}

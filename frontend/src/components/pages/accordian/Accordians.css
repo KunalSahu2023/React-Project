@@ -1,43 +1,47 @@
 
+#Questions{
+    width: 60%;
+    margin: 30px auto;
+}
 #Questions h2{
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 6px;
     text-shadow: 4px 3px 5px black;
+    text-align: center;
 }
 .main-div{
-    width: 60%;
-    height: 550px;
-    margin: auto;
-    box-shadow: 0px 5px 10px black;
-    margin-bottom: 20px;
-    overflow: auto;
-}
-h2{
-        text-align: center;
-    font-size: 25px;
+    border-radius: 7px;
+    padding: 10px 20px;
+    box-shadow: 0 1px 5px rgba(0,0,50,0.5);
+    margin-bottom: 30px;
+
 }
 .main-heading{
     width: 100%;
-    height: 68px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 5px 10px black;
-    margin-top: 22px;
+    background-color: transparent;   
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
 }
 .main-heading h3{
     font-size: 22px;
-    margin-left: 100px;
+    margin-left: 20px;
     cursor: pointer;
 }
 .main-heading p{
     font-size: 20px;
-    margin-right: 100px;
+    margin-right: 30px;
     cursor: pointer;
 }
 .answers{
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 500;
     margin-left: 20px;
+    color: black;
+    transition: all 0.5s ease;
 }

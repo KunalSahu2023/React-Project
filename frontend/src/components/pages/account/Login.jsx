@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Account.css';
 import { Link } from 'react-router-dom';
-import { FaAt, FaKey } from 'react-icons/fa';
+import { FaAt, FaKey, FaArrowLeft } from 'react-icons/fa';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 const Login = () => {
@@ -24,13 +24,17 @@ const Login = () => {
     return (
         <>
             <div id="account-container">
+            <Link to='/'>
+         <button className='back'>
+            <FaArrowLeft /> Back
+            </button></Link>
                 <div className="login-box">
-
+                    
                     <h4>
                         <p className="msg">Welcome Back</p>
                     </h4>
-                    <form
-                        onSubmit={handleSubmit}>
+                    <form 
+                    onSubmit={handleSubmit}>
                         <div className="input-group">
 
                             <div className="input-field">
@@ -55,8 +59,8 @@ const Login = () => {
                         </div>
                         <div className="btn-field">
                             <button type='submit' className="account-btn">
-                                Login
-                            </button>
+                              <Link to ='/dashboard'>Login</Link>
+                                </button>
                         </div>
                     </form>
                 </div>

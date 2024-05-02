@@ -2,17 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-h2{
-  font-size: 50px;
-}
-h3{
-  font-size: 40px;
-  text-align: center;
-  font-weight: 700;
-}
-p{
-  font-size: 30px;
-  text-align: center;
-  font-weight: 600;
-}

@@ -8,8 +8,7 @@ const Answers = ({ question, answer }) => {
         <>
            <div className="main-heading">
                 <h3>{question}</h3>
-                <p onClick={() => setShow(!show)}> { show? <FaMinus /> : <FaPlus /> } </p>
-                   
+                <p onClick={() => setShow(!show)}> { show? <FaMinus /> : <FaPlus /> } </p> 
             </div>
             { show &&  <p className="answers"> {answer} </p> }
          

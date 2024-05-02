@@ -1,10 +1,10 @@
 import React from 'react'
 import './Weather.css';
-
+import './Dashboard.css';
 const Weather = () => {
   return (
     <>
-    <div id="weather">
+<div id="weather">
 <div id="weather-container">
    <div class="container-1">
        <i class="fas fa-sun"></i> <span>28.6*C</span>

@@ -19,7 +19,7 @@ app.use(
 );
 
 //Create a new User
-app.post("/register", async (req, res) => {
+app.post("/register", (req, res) => {
     try {
         const newUser = {
             email: req.body.email,
@@ -27,43 +27,43 @@ app.post("/register", async (req, res) => {
             name: req.body.name,
         };
 
-        await User.create(newUser);
+        User.create(newUser);
 
-        return res.status(201).json("User registered successfully", newUser.name);
+        return res.status(201).json({ message: "User registered successfully", name: newUser.name });
     } catch (error) {
         console.log(error.message);
-        res.status(500).json("Unable to register.");
+        res.status(500).json({ message: "Unable to register. Try again." });
     }
 });
 
 //Login
 app.post("/login", async (req, res) => {
-    const { email, password } = await req.body;
+    const { email, password } = req.body;
 
     try {
         const foundUser = await User.findOne({ email });
 
         if (!foundUser) {
-            return res.status(404).json('User not found');
+            return res.status(404).json({ message: 'User not found.' });
         }
 
         // Compare passwords
         if (foundUser.password !== md5(password)) {
-            return res.status(401).json('Incorrect password');
+            return res.status(401).json({ message: 'Incorrect password.' });
         }
 
-        res.status(200).json("Login successful", foundUser.name);
+        res.status(200).json({ message: "Login successful", name: foundUser.name });
 
     } catch (error) {
         console.log(error.message);
-        res.status(500).json("Internal server error");
+        res.status(500).json({ message: "Internal server error." });
     }
 });
 
 //Logout
-app.post("/logout", async (req, res) => {
+app.post("/logout", (req, res) => {
     try {
-        return res.status(200).json("Logout successful");
+        return res.status(200).json({ message: "Logout successful" });
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ message: error.message });

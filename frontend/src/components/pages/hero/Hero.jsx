@@ -17,7 +17,7 @@ function Hero() {
         <p>Growing Smarter, Harvesting Better.</p>
        </div>
        <div class="image-box-">
-     <video controls autoplay muted loop
+     <video controls autoPlay loop muted
      src={vid}/>
        </div>
     </div>

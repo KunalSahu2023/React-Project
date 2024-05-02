@@ -5,7 +5,7 @@ import './Weather.css'
 import Footer from '../footer/Footer';
 import DashboardBlog from './DashboardBlog';
 import Weather from './Weather';
-import { FaClipboardCheck, FaBell, FaCalendar, FaUser, FaCloud, FaCircle } from 'react-icons/fa';
+import { FaClipboardCheck, FaBell, FaCalendar, FaUser, FaCloud, FaWindowClose } from 'react-icons/fa';
 import DashNav from './DashNav';
 const Deshboard = ({children}) => {
     const[openblog ,setOpenBlog] = useState(false);
@@ -26,7 +26,7 @@ const Deshboard = ({children}) => {
                 <div
                 onClick={blogToggle}
                 className="dash-menu">
-                    <FaClipboardCheck  className='fa'/>
+                    <FaClipboardCheck className='fa'/>
                     <p>Dashboard</p>
                     </div>
                     <div
@@ -38,13 +38,13 @@ const Deshboard = ({children}) => {
                     <div 
                 
                 className="dash-menu">
-                    <FaUser  className='fa'/>
+                    <FaUser className='fa'/>
                     <p>Profile</p>
                     </div>
                     <div 
                 
                 className="dash-menu">
-                    <FaCalendar  className='fa'/>
+                    <FaCalendar className='fa'/>
                     <p>Event</p>
                     </div>
                     <div 
@@ -56,7 +56,7 @@ const Deshboard = ({children}) => {
                     <div 
                 
                 className="dash-menu">
-                    <FaCircle className='fa'/>
+                    <FaWindowClose className='fa'/>
                     <p>Setting</p>
                     </div>
 

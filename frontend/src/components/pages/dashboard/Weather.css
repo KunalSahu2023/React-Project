@@ -33,8 +33,11 @@
     border-radius: 10px;
     outline: none;
 }
+hr{
+    width: 100%;
+}
 .container-2{
-    width: 45;
+    width: 50%;
     height: 350px;
     padding: 10px;
     display: flex;
@@ -53,16 +56,18 @@
     width: 240px;
     height: 100px;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 3px;
     text-align: center;
     background: rgba(0,0,0,0.6);
     border-radius: 10px;
 }
 .box-1 .box-01 span{
-    margin: 9px;
     padding: 2px;
-    text-align: center;
+    margin: 4px;
+}
+.fa{
+    margin-top: 15px;
 }
 .container-3{
     width: 18%;

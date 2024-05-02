@@ -2,7 +2,7 @@
 /* header styling end */
 #dashboard-container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,28 +11,33 @@
 }
 .dashboard-sidebar{
     width: 20%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: #1D24CA;
 }
-.dash-menu{
-    margin: 15px 20px;
+.dash-menu {
+    padding: 5px 5px;
+}
+.dash-menu {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 23px;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
     cursor: pointer;
     border-bottom: 2px solid rgba(234, 228, 228, 0.2);
 }
-.dash-menu:hover{
+.dash-menu a:hover{
+    border-radius: 5px;
     color: white;
-    background-color: rgba(117, 39, 189, 0.6);
-    border-radius: 5px ;
+    background-color: black;
+    border-radius: 7px;
+    margin-left: 5px;
 }
-.dash-menu .fa:hover{
-    color: blue;
-}
+
 .dashboard-flex{
     width: 80%;
     height: 100vh;

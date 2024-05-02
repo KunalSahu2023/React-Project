@@ -1,44 +1,46 @@
 import React from 'react'
 import './Weather.css';
 import './Dashboard.css';
+import { WiDaySunny, WiDust, WiHumidity, WiSandstorm, WiStrongWind, WiSunrise, WiSunset } from 'weather-icons-react';
+import { FaAirFreshener, FaCloudSun, FaCloudSunRain, FaMoon, FaRegMoon, FaSun, FaWind } from 'react-icons/fa';
 const Weather = () => {
   return (
     <>
 <div id="weather">
 <div id="weather-container">
    <div class="container-1">
-       <i class="fas fa-sun"></i> <span>25°C</span>
+       <FaSun className='fa'/><span>25°C</span>
        <span>Sunny</span>
        <hr />
-       <span>Jhansi</span>
-       <i class="fas fa-sun"></i><span>Jhansi</span>
+       <FaCloudSunRain /><span>Jhansi</span>
+       
    </div>
    <div class="container-2">
        <div class="box-1">
            <div class="box-01">
-              <span>Wind Speed</span>
+              <FaWind className='fa' /><span>Wind Speed</span>
                <span>18km/hr</span>
            </div>
            <div class="box-01">
-               <i class="fas fa-sun"></i><span>Pressure</span>
+               <FaAirFreshener className='fa' /><span>Pressure</span>
                <span>1006 hPa</span>
            </div>
            <div class="box-01">
-            <i class="fas fa-sun"></i><span>Sunrise</span>
+            <FaRegMoon className='fa' /><span>Sunrise</span>
            <span>5:37 AM</span>
                    </div>
            </div>
            <div class="box-1">
                <div class="box-01">
-                   <i class="fas fa-sun"></i><span>Humidity</span>
+                   <span>Humidity</span>
                    <span>29%</span>
                </div>
                <div class="box-01">
-                   <i class="fas fa-sun"></i><span>Visibilty</span>
+                   <WiDust  className='fa'/><span>Visibilty</span>
                    <span>16Km</span>
                </div>
                <div class="box-01">
-                   <i class="fas fa-sun"></i><span>Sunset</span>
+                   <WiSunset  className='fa'/><span>Sunset</span>
                    <span>6:46 PM</span>
                </div>
                    </div>

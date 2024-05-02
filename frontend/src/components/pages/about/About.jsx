@@ -7,7 +7,7 @@ import kunal from '../../../assets/member-1.jpeg';
 import naman from '../../../assets/member-2.jpeg';
 import guide from '../../../assets/guide.jpeg';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaLinkedinIn } from 'react-icons/fa';
 const About = () => {
   return (
     <>
@@ -44,7 +44,7 @@ const About = () => {
    </div>
    
    <div id="our-team-container">
-       <h2>Meet Our Team</h2>
+       <h2>Our Team</h2>
    
        <div className="cards-box">
          
@@ -53,8 +53,9 @@ const About = () => {
                <h4>Kunal Sahu</h4>
                <p>Front End Developer</p>
                <div className="team-social">
-               <Link to=""><FaInstagram className='fa insta' /></Link>
-                <Link to=""><FaGithub className='fa github' /></Link>
+               <Link to="https://www.instagram.com/its_a_simple_boy/"><FaInstagram className='fa insta' /></Link>
+                <Link to="https://github.com/KunalSahu2023"><FaGithub className='fa github' /></Link>
+                <Link to="https://www.linkedin.com/in/kunal-sahu-56990122b/"><FaLinkedin className='fa linked' /></Link>
                </div>
            </div>
           
@@ -64,7 +65,8 @@ const About = () => {
                    <p>Back End Developer</p>
                    <div className="team-social">
                    <Link to=""><FaInstagram className='fa insta' /></Link>
-                <Link to=""><FaGithub className='fa github' /></Link>
+                <Link to="https://github.com/virtuallynaman"><FaGithub className='fa github' /></Link>
+                <Link to="https://www.linkedin.com/in/namanjha/"><FaLinkedin className='fa linked' /></Link>
                    </div>
                </div>
               
@@ -73,8 +75,9 @@ const About = () => {
                    <h4>Er.Yashwant Dev</h4>
                    <p>Project Guide</p>
                    <div className="team-social">
-                   <Link to=""><FaInstagram className='fa insta' /></Link>
+                   <Link to="https://www.instagram.com/_an___engineer/"><FaInstagram className='fa insta' /></Link>
                 <Link to=""><FaGithub className='fa github' /></Link>
+                <Link to=""><FaLinkedin className='fa linked' /></Link>
                    </div>
                    </div>
             

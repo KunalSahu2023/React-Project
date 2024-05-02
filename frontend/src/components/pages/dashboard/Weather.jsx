@@ -7,81 +7,81 @@ const Weather = () => {
 <div id="weather">
 <div id="weather-container">
    <div class="container-1">
-       <i class="fas fa-sun"></i> <span>28.6*C</span>
-       <span>Clear Day</span>
+       <i class="fas fa-sun"></i> <span>25°C</span>
+       <span>Sunny</span>
        <hr />
-       <i class="fas fa-sun"></i><span>Istambul</span>
-       <i class="fas fa-sun"></i><span>Istambul</span>
+       <span>Jhansi</span>
+       <i class="fas fa-sun"></i><span>Jhansi</span>
    </div>
    <div class="container-2">
        <div class="box-1">
            <div class="box-01">
-               <i class="fas fa-sun"></i><span>Wind Speed</span>
-               <span>28km/hr</span>
+              <span>Wind Speed</span>
+               <span>18km/hr</span>
            </div>
            <div class="box-01">
                <i class="fas fa-sun"></i><span>Pressure</span>
-               <span>1008 hPa</span>
+               <span>1006 hPa</span>
            </div>
            <div class="box-01">
             <i class="fas fa-sun"></i><span>Sunrise</span>
-           <span>06:26</span>
+           <span>5:37 AM</span>
                    </div>
            </div>
            <div class="box-1">
                <div class="box-01">
                    <i class="fas fa-sun"></i><span>Humidity</span>
-                   <span>48%</span>
+                   <span>29%</span>
                </div>
                <div class="box-01">
                    <i class="fas fa-sun"></i><span>Visibilty</span>
-                   <span>10Km</span>
+                   <span>16Km</span>
                </div>
                <div class="box-01">
                    <i class="fas fa-sun"></i><span>Sunset</span>
-                   <span>19:44</span>
+                   <span>6:46 PM</span>
                </div>
                    </div>
        </div>
        <div class="container-3">
            <div class="box">
                <div class="boxx">
-                   <span>Monday</span><span>18:00</span>
+                   <span>Today</span><span>8:00 AM</span>
                </div>
                <div class="boxx">
-                   <span>28.6*C</span>
-               </div>
-           </div>
-           <div class="box">
-               <div class="boxx">
-                   <span>Monday</span><span>18:00</span>
-               </div>
-               <div class="boxx">
-                   <span>28.6*C</span>
+                   <span>21°C</span>
                </div>
            </div>
            <div class="box">
                <div class="boxx">
-                   <span>Monday</span><span>18:00</span>
+                   <span>Tomorrow</span><span>8:00 AM</span>
                </div>
                <div class="boxx">
-                   <span>28.6*C</span>
-               </div>
-           </div>
-           <div class="box">
-               <div class="boxx">
-                   <span>Monday</span><span>18:00</span>
-               </div>
-               <div class="boxx">
-                   <span>28.6*C</span>
+                   <span>23°C</span>
                </div>
            </div>
            <div class="box">
                <div class="boxx">
-                   <span>Monday</span><span>18:00</span>
+                   <span>Saturday</span><span>8:00 AM</span>
                </div>
                <div class="boxx">
-                   <span>28.6*C</span>
+                   <span>26°C</span>
+               </div>
+           </div>
+           <div class="box">
+               <div class="boxx">
+                   <span>Sunday</span><span>8:00 AM</span>
+               </div>
+               <div class="boxx">
+                   <span>26°C</span>
+               </div>
+           </div>
+           <div class="box">
+               <div class="boxx">
+                   <span>Monday</span><span>8:00 AM</span>
+               </div>
+               <div class="boxx">
+                   <span>26°C</span>
                </div>
            </div>
        </div>
@@ -93,22 +93,25 @@ const Weather = () => {
                <h4>All Days</h4>
            </div>
            <div class="date-box-1">
-               <h4>20 Mar Wed</h4>
+               <h4>2 May Thur</h4>
            </div>
            <div class="date-box-1">
-               <h4>21 Mar Thu</h4>
+               <h4>3 May fri</h4>
            </div>
            <div class="date-box-1">
-               <h4>22 Mar Fri</h4>
+               <h4>4 May Sat</h4>
            </div>
            <div class="date-box-1">
-               <h4>23 Mar Sat</h4>
+               <h4>5 May Sat</h4>
            </div>
            <div class="date-box-1">
-               <h4>24 Mar Sun</h4>
+               <h4>6 May Sun</h4>
            </div>
            <div class="date-box-1">
-               <h4>25 Mar Mon</h4>
+               <h4>7 May Mon</h4>
+           </div>
+           <div class="date-box-1">
+               <h4>8 May Tue</h4>
            </div>
        </div>
        
@@ -116,45 +119,45 @@ const Weather = () => {
                <div class="date-boxx">
                    <div class="boxs">
                        <div class="boxx">
-                           <span>20 Mar wed</span>
-                           <span>18:00</span>
+                           <span>2 May Fri</span>
+                           <span>8:00</span>
                        </div>
                        <div class="boxx">
                            <i class="fas fa-sun"></i>
-                           <span>28*C</span>
+                           <span>25°C</span>
+                           <span>Sunny</span>
+                       </div>
+                   </div>
+                   <div class="boxs">
+                       <div class="boxx">
+                           <span>3 May Sat</span>
+                           <span>8:00</span>
+                       </div>
+                       <div class="boxx">
+                           <i class="fas fa-sun"></i>
+                           <span>21°C</span>
                            <span>Clear</span>
                        </div>
                    </div>
                    <div class="boxs">
                        <div class="boxx">
-                           <span>20 Mar wed</span>
-                           <span>18:00</span>
+                           <span>4 May sun</span>
+                           <span>8:00</span>
                        </div>
                        <div class="boxx">
                            <i class="fas fa-sun"></i>
-                           <span>28*C</span>
+                           <span>23°C</span>
                            <span>Clear</span>
                        </div>
                    </div>
                    <div class="boxs">
                        <div class="boxx">
-                           <span>20 Mar wed</span>
-                           <span>18:00</span>
+                           <span>5 May Mon</span>
+                           <span>8:00</span>
                        </div>
                        <div class="boxx">
                            <i class="fas fa-sun"></i>
-                           <span>28*C</span>
-                           <span>Clear</span>
-                       </div>
-                   </div>
-                   <div class="boxs">
-                       <div class="boxx">
-                           <span>20 Mar wed</span>
-                           <span>18:00</span>
-                       </div>
-                       <div class="boxx">
-                           <i class="fas fa-sun"></i>
-                           <span>28*C</span>
+                           <span>26°C</span>
                            <span>Clear</span>
                        </div>
                    </div>
@@ -162,45 +165,45 @@ const Weather = () => {
                <div class="date-boxx">
                    <div class="boxs">
                        <div class="boxx">
-                           <span>20 Mar wed</span>
-                           <span>18:00</span>
+                           <span>6 May Tue</span>
+                           <span>8:00</span>
                        </div>
                        <div class="boxx">
                            <i class="fas fa-sun"></i>
-                           <span>28*C</span>
+                           <span>26°C</span>
                            <span>Clear</span>
                        </div>
                    </div>
                    <div class="boxs">
                        <div class="boxx">
-                           <span>20 Mar wed</span>
-                           <span>18:00</span>
+                           <span>7 May Wed</span>
+                           <span>8:00</span>
                        </div>
                        <div class="boxx">
                            <i class="fas fa-sun"></i>
-                           <span>28*C</span>
+                           <span>26°C</span>
                            <span>Clear</span>
                        </div>
                    </div>
                    <div class="boxs">
                        <div class="boxx">
-                           <span>20 Mar wed</span>
-                           <span>18:00</span>
+                           <span>8 May Thu</span>
+                           <span>8:00</span>
                        </div>
                        <div class="boxx">
                            <i class="fas fa-sun"></i>
-                           <span>28*C</span>
+                           <span>26°C</span>
                            <span>Clear</span>
                        </div>
                    </div>
                    <div class="boxs">
                        <div class="boxx">
-                           <span>20 Mar wed</span>
-                           <span>18:00</span>
+                           <span>9 May Fri</span>
+                           <span>8:00</span>
                        </div>
                        <div class="boxx">
                            <i class="fas fa-sun"></i>
-                           <span>28*C</span>
+                           <span>26°C</span>
                            <span>Clear</span>
                        </div>
                    </div>

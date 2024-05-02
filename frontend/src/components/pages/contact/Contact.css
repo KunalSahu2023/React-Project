@@ -41,7 +41,8 @@
 }
 .address-box p{
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 .address-box a{
@@ -117,6 +118,7 @@
     border-radius: 6px;
     border: none;
     background-color:rgb(12, 12, 206);
+    cursor: pointer;
 
 }
 .contact-form .btn:hover{

@@ -24,11 +24,11 @@
     width: 320px;
     height: 220px;
     box-shadow: 2px 1px 4px 0px black;
-    margin-top: 6px 2px;
 }
 .flex-3 h4{
     font-size: 18px;
 }
 .flex-3 p{
     font-size: 16px;
+    margin: auto 7px;
 }

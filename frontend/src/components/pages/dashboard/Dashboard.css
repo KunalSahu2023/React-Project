@@ -23,6 +23,12 @@
     gap: 10px;
     font-size: 23px;
     cursor: pointer;
+    border-bottom: 2px solid rgba(234, 228, 228, 0.2);
+}
+.dash-menu:hover{
+    color: white;
+    background-color: rgba(117, 39, 189, 0.6);
+    border-radius: 5px ;
 }
 .dash-menu .fa:hover{
     color: blue;
@@ -34,8 +40,6 @@
     position: relative;
     border: 1px solid black;
 }
-
-
 
 
 

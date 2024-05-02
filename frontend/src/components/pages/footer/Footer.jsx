@@ -15,8 +15,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div class="footer-social-link">
-                    <Link to="#"><FaInstagram className='insta' /></Link>
-                    <Link to="#"><FaGithub className='github' /></Link>
+                    <Link to="https://www.instagram.com/harvesttech_24/"><FaInstagram className='insta' /></Link>
+                    <Link to="https://github.com/KunalSahu2023/ReactProject2024"><FaGithub className='github' /></Link>
                     <Link to="#"><FaFacebook className='fb' /></Link>
                     <Link to="#"><FaYoutube className='yt' /></Link>
                 </div>

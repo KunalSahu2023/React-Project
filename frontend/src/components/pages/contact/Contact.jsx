@@ -3,6 +3,7 @@ import './Contact.css';
 import Nav from '../navbar/Nav';
 import Footer from '../footer/Footer';
 import { FaBuilding, FaEnvelope, FaEnvelopeOpen, FaPhone } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -14,13 +15,11 @@ const Contact = () => {
     <div class="address">
            <div class="address-box">
             <h3>Get in touch</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quisquam?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit, blanditiis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, assumenda?
+            <p>Contact us For More information
             </p>
             <p><a href=""><FaBuilding className='building' />Barwasagar - Jhansi (U.P.)</a></p>
-           <p><a href=""> <FaPhone className='phone'/> 8076215837 , 7654238900</a></p>
-           <p> <a href=""><FaEnvelopeOpen className='envelope' /> harvesttech@gmail.com</a></p>
+           <p><Link to="tel:+07307129517"> <FaPhone className='phone'/> 8076215837</Link></p>
+           <p> <a href="mailto:harvesttech24@gmail.com"><FaEnvelopeOpen className='envelope' /> harvesttech24@gmail.com</a></p>
            </div>
         </div>
         <div class="contact-form">
@@ -39,7 +38,7 @@ const Contact = () => {
 
                 <p><label for="message">Message</label><br />
                     <textarea name="" id="" cols="20" rows="5"> Write something ....</textarea></p>
-                    <button class="btn">Send message</button>
+                    <a href="mailto:kunalsahu3131@gmail.com"><button class="btn">Send message</button></a>
             </form>
         </div>
         

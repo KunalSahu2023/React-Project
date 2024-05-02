@@ -25,9 +25,10 @@
     height: 100%;
     margin: 10px;
     padding: 10px;
-    background-color: rgb(36, 189, 36);
+    background-color: #7469B6;
     box-shadow: 2px 3px 10px 2px black;
     position: relative;
+    color: white;
 }
 .address-box{
     position: absolute;
@@ -36,47 +37,50 @@
     margin-right: 15px;
 }
 .address-box h3{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
+    border-bottom: 2px solid rgba(218, 211, 211, 0.1);
 }
 .address-box p{
     margin-top: 15px;
     font-size: 18px;
-    font-weight: 600;
     margin-bottom: 30px;
+    font-weight: 500;
 }
 .address-box a{
     text-decoration: none;
     font-size: 15px;
-    color: black;
+    color: white;
     cursor: pointer;
     margin-top: 10px;
+    font-weight: 500;
 }
 .envelope:hover{
-    color: #ffff00;
+    color: #874CCC;
 }
 .phone:hover{
     color: #0000ff;
 }
 .building:hover{
-    color: #da70d6;
+    color: #874CCC;
 }
 /* contact-form styling start */
 .contact-form{
     width: 40%;
     height: 100%;
-    background-color: rgb(36, 189, 36);
+    background-color: #7469B6;
     box-shadow: 2px 3px 10px 2px black;
     margin: 20px;
     padding: auto;
     position: relative;
 }
 .contact-form form{
-    margin: 10px 15px auto ;
+    margin: 5px 15px auto ;
     padding: 2px;
     position: absolute;
     top: 15%;
     left: 5%;
+    
 }
 .contact-form form p{
     margin: 2px 5px;
@@ -94,9 +98,9 @@
 }
 .contact-form form label{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 2px;
-    color: black;
+    color: white;
     margin: 2px 5px;
 }
 .contact-form form textarea{

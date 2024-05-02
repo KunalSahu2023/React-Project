@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+// import { SnackbarProvider, enqueueSnackbar } from 'notistack';
 
 
 const Nav = () => {
@@ -8,7 +9,7 @@ const Nav = () => {
   return (
     <>
      <header id="header-container">
-        <h2><Link to="/" class="logo">Harvest Tech</Link></h2>
+        <h2><Link to="" class="logo">Harvest Tech</Link></h2>
 
         <nav class="header-navbar">
             <ul>
@@ -28,7 +29,8 @@ const Nav = () => {
         </nav>
         <div class="account">
            <Link to='/' class="btn">
-           <button> 
+           <button 
+           > 
             Logout
             </button>
            </Link>

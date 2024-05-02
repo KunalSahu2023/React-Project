@@ -9,7 +9,6 @@ const Questions = () => {
         <>
             <div id="Questions">
             <h2> Questions Related to Harvest Tech </h2>       
-            <div className="main-div">
         {
                 data.map((curElem) => {
                     return <Answers key={curElem.id} 
@@ -17,7 +16,6 @@ const Questions = () => {
                     
                 })        
         }
-                 </div>
             </div>
         </>
     )

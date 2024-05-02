@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaArrowLeft, FaAt, FaKey, FaUser } from 'react-icons/fa';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+import { SnackbarProvider, enqueueSnackbar } from 'notistack';
 const Register = () => {
 
     const [name, setName] = useState();
@@ -67,7 +68,8 @@ const Register = () => {
                             </div>
                         </div>
                         <div className="btn-field">
-                            <button type='submit' className="account-btn">
+                            <button 
+                            type='submit' className="account-btn">
                                 Register
                             </button>
                             <p><span className="text">Already have an account?</span> <Link to="/login"> Login Here</Link></p>

@@ -1,7 +1,7 @@
 
 /* home styling start */
 #home-container{
-    width: 95%;
+    width: 100%;
     height: 600px;
     margin: auto;
 }
@@ -10,31 +10,31 @@
 }
 #home-container video{
     width: 100%;
-    height: 530px;
-    margin: 20px auto;
+    height: 720px;
     position: relative;
     border: none;
     outline: none;
-}
+    cursor: pointer;
+ }
 .content-box{
     padding: 10px;
     height: 250px;
     text-align: center;
     line-height: 1;
     position: absolute;
-    top: 35%;
-    left: 25%;
+    top: 51%;
+    left: 20%;
     z-index: 50;
 }
 .content-box h1{
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 800;
-    color: black;
+    color: white;
     text-shadow: 2px 2px 0px white;
 }
 .content-box p{
-    font-size: 23px;
-    color: white;
+    font-size: 32px;
+    color: blue;
     font-weight: 600;
 }
 

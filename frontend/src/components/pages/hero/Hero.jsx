@@ -3,7 +3,8 @@ import './Hero.css';
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 import Questions from '../accordian/Questions';
-import vid from '../../../assets/video-1.mp4';
+import vid from '../../../assets/video-2.mp4';
+import { SnackbarProvider, enqueueSnackbar} from 'notistack';
 
 function Hero() {
 
@@ -16,11 +17,15 @@ function Hero() {
         <p>Growing Smarter, Harvesting Better.</p>
        </div>
        <div class="image-box-">
-     <video controls muted loop
+     <video controls autoplay muted loop
      src={vid}/>
        </div>
     </div>
+
+    {/* stackbar */}
     <Questions />
+    {/* <SnackbarProvider />
+      <button onClick={() => enqueueSnackbar('That was easy!')}>Show snackbar</button> */}
     <Footer />
    </>
   )

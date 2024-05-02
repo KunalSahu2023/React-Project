@@ -3,11 +3,10 @@ import './Dashboard.css';
 import './DashboardBlog.css'
 import './Weather.css'
 import Footer from '../footer/Footer';
-import Nav from '../navbar/Nav';
 import DashboardBlog from './DashboardBlog';
 import Weather from './Weather';
 import { FaClipboardCheck, FaBell, FaCalendar, FaUser, FaCloud, FaCircle } from 'react-icons/fa';
-
+import DashNav from './DashNav';
 const Deshboard = ({children}) => {
     const[openblog ,setOpenBlog] = useState(false);
     const[openWeather ,setOpenWeather] = useState(false);
@@ -20,8 +19,7 @@ const Deshboard = ({children}) => {
     }
   return (
   <>
-  <Nav />
-
+<DashNav />
 <div id="dashboard-container">
 <div className="dashboard-sidebar">
     

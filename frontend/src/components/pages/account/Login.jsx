@@ -24,19 +24,14 @@ const Login = () => {
     return (
         <>
             <div id="account-container">
-            <Link to='/'>
-         <button className='back'>
-            <FaArrowLeft /> Back
-            </button></Link>
+                <Link to='/'>
+                    <button className='back'>
+                        <FaArrowLeft /> Back
+                    </button></Link>
                 <div className="login-box">
-                    
-                    <h4>
-                        <p className="msg">Welcome Back</p>
-                    </h4>
-                    <form 
-                    onSubmit={handleSubmit}>
+                    <p className="msg">Welcome Back</p>
+                    <form onSubmit={handleSubmit}>
                         <div className="input-group">
-
                             <div className="input-field">
                                 <FaAt className='fa' />
                                 <input
@@ -55,12 +50,12 @@ const Login = () => {
                                     placeholder="Enter your password"
                                     required />
                             </div>
-                            <p><span className="text">Don't have an account?</span> <Link to="/register">Register Here</Link></p>
                         </div>
                         <div className="btn-field">
                             <button type='submit' className="account-btn">
-                              <Link to ='/dashboard'>Login</Link>
-                                </button>
+                                Login
+                            </button>
+                            <p><span className="text">Don't have an account?</span> <Link to="/register">Register Here</Link></p>
                         </div>
                     </form>
                 </div>

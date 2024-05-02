@@ -28,12 +28,12 @@ const Register = () => {
     return (
         <>
             <div id="account-container">
-        <Link to='/'>
-        <button className='back'>
-            <FaArrowLeft /> Back
-            </button></Link>
+                <Link to='/'>
+                    <button className='back'>
+                        <FaArrowLeft /> Back
+                    </button></Link>
                 <div className="reg-box">
-                        <p className="msg">Welcome to Harvest Tech</p>
+                    <p className="msg">Welcome to Harvest Tech</p>
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
                             <div className="input-field nameField">
@@ -65,17 +65,12 @@ const Register = () => {
                                     placeholder="Enter your password"
                                     required />
                             </div>
-                            <p><span className="text">Already have an account?</span> <Link to="/login"> Login Here</Link></p>
                         </div>
                         <div className="btn-field">
                             <button type='submit' className="account-btn">
-<<<<<<< HEAD
                                 Register
                             </button>
-=======
-                            Register
-                                </button>
->>>>>>> 73536dce0855838df59a3f3435989411b1f3036b
+                            <p><span className="text">Already have an account?</span> <Link to="/login"> Login Here</Link></p>
                         </div>
                     </form>
                 </div>

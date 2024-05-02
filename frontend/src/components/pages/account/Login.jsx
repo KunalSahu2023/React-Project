@@ -15,46 +15,48 @@ const Login = () => {
         axios.post("/login", { email, password })
             .then(result => {
                 console.log(result.data)
-                if (result.data === "Login successful")
+                if (result.data.message === "Login successful")
                     navigate("/dashboard")
             })
-            .catch(err => alert(err.response.data))
+            .catch(err => alert(err.response.data.message))
     };
 
     return (
         <>
             <div id="account-container">
                 <div className="login-box">
-                    
+
                     <h4>
                         <p className="msg">Welcome Back</p>
                     </h4>
-                    <form 
-                    onSubmit={handleSubmit}>
+                    <form
+                        onSubmit={handleSubmit}>
                         <div className="input-group">
 
                             <div className="input-field">
-                                <FaAt  className='fa'/>
+                                <FaAt className='fa' />
                                 <input
                                     type="email"
                                     name='email'
                                     onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="Enter your Email" required />
+                                    placeholder="Enter your Email"
+                                    required />
                             </div>
 
                             <div className="input-field">
-                            <FaKey className='fa' />
-                                <input type="password" 
-                                name='password'
-                                onChange={(e) => setPassword(e.target.value)}
-                                placeholder="Enter your password" required />
+                                <FaKey className='fa' />
+                                <input type="password"
+                                    name='password'
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    placeholder="Enter your password"
+                                    required />
                             </div>
                             <p><span className="text">Don't have an account?</span> <Link to="/register">Register Here</Link></p>
                         </div>
                         <div className="btn-field">
                             <button type='submit' className="account-btn">
-                              <Link to ='/dashboard'>Login</Link>
-                                </button>
+                                Login
+                            </button>
                         </div>
                     </form>
                 </div>

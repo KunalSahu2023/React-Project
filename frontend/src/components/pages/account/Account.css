@@ -24,10 +24,10 @@
 }
 .reg-box{
     width: 370px;
-    height: 65%;
+    height: 55%;
 }
 .reg-box, .login-box{
-    background: rgb(146, 76, 211);
+    background: rgb(51, 155, 35);
     text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(224, 203, 203, 0.5);
@@ -41,7 +41,7 @@
     font-size: 25px;
     font-weight: 600;
     letter-spacing: 2px;
-    color: green;
+    color: rgb(218, 210, 210);
     margin-top: 60px;
 }
 .input-group{
@@ -72,12 +72,12 @@
 }
 p .text{
     font-size: 18px;
-    color: black;
+    color: rgb(218, 210, 210);
     font-weight: 600;
 }
 p a{
     font-size: 18px;
-    color: green;
+    color: rgb(218, 210, 210);
     text-decoration: none;
     font-weight: 700;
 }

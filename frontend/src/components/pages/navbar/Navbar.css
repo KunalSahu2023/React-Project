@@ -47,7 +47,7 @@
     height: 40px;
     font-size: 16px;
     font-weight: 700;
-    color: black;
+    color: white;
     text-align: center;
     background: green;
     border-radius: 10px;
@@ -55,7 +55,7 @@
     cursor: pointer;
 }
 .account button:hover{
-    background: blueviolet;
+    background: rgb(39, 181, 48);
     color: white;
 }
 

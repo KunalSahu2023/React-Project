@@ -10,6 +10,7 @@
 }
 #home-container video{
     width: 100%;
+    object-fit: fill;
     height: 720px;
     position: relative;
     border: none;
@@ -20,10 +21,10 @@
     padding: 10px;
     height: 250px;
     text-align: center;
-    line-height: 1;
+    line-height: 0.5;
     position: absolute;
-    top: 51%;
-    left: 20%;
+    top: 40%;
+    left: 25%;
     z-index: 50;
 }
 .content-box h1{
@@ -34,7 +35,7 @@
 }
 .content-box p{
     font-size: 32px;
-    color: b;
+    color: white;
     font-weight: 600;
 }
 
